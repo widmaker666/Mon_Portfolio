@@ -1,1 +1,14 @@
-@import "./styles/settings"
+@import "./styles/settings";
+
+//-Pages //
+@import "./styles/pages/about";
+@import "./styles/pages/carousel";
+@import "./styles/pages/contact";
+@import "./styles/pages/erreur_404";
+@import "./styles/pages/home";
+@import "./styles/pages/projects";
+
+//- Components //
+@import "./styles/components/navbar";
+@import "./styles/components/footer";
+
