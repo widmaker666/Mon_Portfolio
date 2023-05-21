@@ -5,15 +5,13 @@ import LightBtn from "../components/LightBtn";
 
 const Home = () => {
   return (
-    <main>
+    <>
       <LightBtn />
       <Title />
-      <section id="home">
-        <div className="navbar">
-          <Navbar />
-        </div>
+      <section className="home" id="home">
+        <Navbar />
       </section>
-    </main>
+    </>
   );
 };
 

@@ -12,26 +12,32 @@ header {
   }
   & h1:hover {
     cursor: pointer;
-    animation: move-title 3s infinite forwards;
+    animation: move-title 5s infinite;
   }
   @keyframes move-title {
     0% {
       color: #2c3532;
+      text-shadow: -6px 4px 7px #2c3532;
     }
     33% {
       color: #0f6466;
+      text-shadow: -6px 4px 7px #0f6466;
     }
     66% {
       color: #d8b08c;
+      text-shadow: -6px 4px 7px #d8b08c;
     }
     80% {
       color: #ffcb9a;
+      text-shadow: -6px 4px 7px #ffcb9a;
     }
     90% {
       color: #d2e8e3;
+      text-shadow: -6px 4px 7px #d2e8e3;
     }
     100% {
       color: #2c3532;
+      text-shadow: -6px 4px 7px #2c3532;
     }
   }
 
@@ -48,13 +54,13 @@ header {
           color: black;
         }
         & #social1:hover {
-          color: rgb(182, 0, 182);
+          color: rgb(169, 27, 212);
         }
         & #social2:hover {
           color: rgb(20, 196, 228);
         }
         & #social3:hover {
-          color: rgb(1, 34, 141);
+          color: rgb(0, 76, 190);
         }
       }
 
@@ -226,17 +232,19 @@ header {
   }
   & .arrow-down:hover {
     cursor: pointer;
-    animation: arrow-down 1s infinite forwards;
+    animation: arrow-down 1s ease infinite forwards;
   }
   @keyframes arrow-down {
     0% {
-      transform: translateY(0);
+      transform: scale(1);
     }
     50% {
-      transform: translateY(30%);
+      transform: scale(0.6);
     }
+
     100% {
-      transform: translateY(0);
+      transform: scale(1);
+      transition: 0.5s;
     }
   }
 }

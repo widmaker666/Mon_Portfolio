@@ -9,12 +9,12 @@ import React from "react";
 const Title = () => {
   return (
     <header>
-      <div className="header">
+      <div className="header" id="header">
         <h1>PORTFOLIO</h1>
         <div className="links-container">
           <ul className="links">
             <li>
-              <a href="https://youtu.be/ahdH8eTydWY" target="_blank">
+              <a className="text" href="https://youtu.be/ahdH8eTydWY" target="_blank">
                 <IconBrandInstagram id="social1" size={71} stroke={2} />
               </a>
             </li>
