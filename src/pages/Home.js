@@ -8,7 +8,11 @@ const Home = () => {
     <main>
       <LightBtn />
       <Title />
-      <Navbar />
+      <section id="home">
+        <div className="navbar">
+          <Navbar />
+        </div>
+      </section>
     </main>
   );
 };

@@ -1,15 +1,40 @@
 header {
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
 
   & h1 {
     font-family: $font-title;
     font-weight: 100;
-    font-size: 6rem;       
+    font-size: 6rem;
     text-shadow: -6px 4px 7px rgba(0, 0, 0, 0.33);
     margin: 5px 0 0 10px;
   }
+  & h1:hover {
+    cursor: pointer;
+    animation: move-title 3s infinite forwards;
+  }
+  @keyframes move-title {
+    0% {
+      color: #2c3532;
+    }
+    33% {
+      color: #0f6466;
+    }
+    66% {
+      color: #d8b08c;
+    }
+    80% {
+      color: #ffcb9a;
+    }
+    90% {
+      color: #d2e8e3;
+    }
+    100% {
+      color: #2c3532;
+    }
+  }
+
   & .links-container {
     & .links {
       display: flex;
@@ -39,7 +64,7 @@ header {
       }
       & li:nth-child(2):hover {
         cursor: pointer;
-        animation: up-down 2s ease 0s infinite normal forwards;
+        animation: up-down 3s ease 0s infinite normal forwards;
       }
       & li:last-child:hover {
         cursor: pointer;
@@ -79,7 +104,7 @@ header {
         }
 
         24% {
-          opacity: 1;
+          transform: translateY(-5px);
         }
 
         40% {
@@ -89,7 +114,7 @@ header {
 
         65% {
           animation-timing-function: ease-in;
-          transform: translateY(-12px);
+          transform: translateY(-20px);
         }
 
         82% {
@@ -147,6 +172,7 @@ header {
       }
     }
   }
+
   & .name {
     display: flex;
     flex-direction: column;
@@ -161,7 +187,7 @@ header {
       font-weight: 100;
       letter-spacing: 8px;
       text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.39);
-      padding: 20px;
+      padding: 25px;
       text-decoration: underline;
       text-underline-offset: 8px;
     }
@@ -169,17 +195,17 @@ header {
       font-family: $font-paragraph-light;
       font-size: 24px;
       letter-spacing: 10px;
-      padding: 10px;
+      margin: 6px;
       text-align: right;
-      width: 90vh;
+      width: 93vh;
       text-decoration: underline;
       text-underline-offset: 8px;
     }
   }
   & .quote-container {
     display: flex;
-    justify-content: flex-end;    
-    margin-right: 50px;
+    justify-content: flex-end;
+    padding: 40px 50px 0 0;
     & .quote {
       display: flex;
       text-align: end;
@@ -190,12 +216,27 @@ header {
       border: 3px solid black;
     }
     & .description {
-      padding: 20px;
+      padding: 30px;
     }
   }
   & .arrow-down {
     position: absolute;
-    bottom: 8%;
-    right: 50%;    
+    bottom: 15%;
+    right: 50%;
+  }
+  & .arrow-down:hover {
+    cursor: pointer;
+    animation: arrow-down 1s infinite forwards;
+  }
+  @keyframes arrow-down {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(30%);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
 }

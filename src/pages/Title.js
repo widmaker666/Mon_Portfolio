@@ -53,7 +53,7 @@ const Title = () => {
           </div>
         </div>
         <div className="arrow-down">
-          <IconCircleChevronDown size={51} color="black" stroke={1} />
+         <a href="#home"><IconCircleChevronDown size={51} color="black" stroke={1} /></a> 
         </div>
       </div>
     </header>
