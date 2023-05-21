@@ -1,17 +1,16 @@
-import React from 'react';
-import Navbar from '../components/Navbar';
-
+import React from "react";
+import Navbar from "../components/Navbar";
+import Title from "./Title";
+import LightBtn from "../components/LightBtn";
 
 const Home = () => {
-    return (
-        <>
-
-        
-        <div className="navbar">
-            <Navbar/>
-        </div>
-        </>
-    );
+  return (
+    <main>
+      <LightBtn />
+      <Title />
+      <Navbar />
+    </main>
+  );
 };
 
 export default Home;
