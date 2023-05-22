@@ -9,35 +9,47 @@ header {
     font-size: 6rem;
     text-shadow: -6px 4px 7px rgba(0, 0, 0, 0.33);
     margin: 5px 0 0 10px;
+    width: 40vw;
+    transition: all 0.5s;
+    animation: move-title 15s infinite linear;
   }
-  & h1:hover {
-    cursor: pointer;
-    animation: move-title 5s infinite;
-  }
+  
   @keyframes move-title {
     0% {
-      color: #2c3532;
-      text-shadow: -6px 4px 7px #2c3532;
+      color: #001219;
+      text-shadow: -6px 4px 7px #001219;
+    }
+    15% {
+      color: #005F73;
+      text-shadow: -6px 4px 7px #005F73;
     }
     33% {
-      color: #0f6466;
-      text-shadow: -6px 4px 7px #0f6466;
+      color: #0A9396;
+      text-shadow: -6px 4px 7px #0A9396;
+    }
+    53% {
+      color: #94D2BD;
+      text-shadow: -6px 4px 7px #94D2BD;
     }
     66% {
-      color: #d8b08c;
-      text-shadow: -6px 4px 7px #d8b08c;
+      color: #E9D8A6;
+      text-shadow: -6px 4px 7px #E9D8A6;
+    }
+    75% {
+      color: #CA6702;
+      text-shadow: -6px 4px 7px #CA6702;
     }
     80% {
-      color: #ffcb9a;
-      text-shadow: -6px 4px 7px #ffcb9a;
+      color: #BB3E03;
+      text-shadow: -6px 4px 7px #BB3E03;
     }
     90% {
-      color: #d2e8e3;
-      text-shadow: -6px 4px 7px #d2e8e3;
+      color: #AE2012;
+      text-shadow: -6px 4px 7px #AE2012;
     }
     100% {
-      color: #2c3532;
-      text-shadow: -6px 4px 7px #2c3532;
+      color: #9B2226;
+      text-shadow: -6px 4px 7px #9B2226;
     }
   }
 

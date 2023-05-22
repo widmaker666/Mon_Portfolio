@@ -32,13 +32,12 @@
       height: 100%;
       background: $color-btn;
       z-index: -1;
-      transition: all 0.8s;
+      transition: all 0.3s;
     }
 
     & .navlink:hover::before {
       cursor: pointer;
-      top: 0px;
-      border-radius: 0;
+      top: 0px;      
     }
 
     & li {

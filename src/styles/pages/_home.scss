@@ -1,3 +1,174 @@
 .home {
-    height: 100vh;
+  min-height: 100vh;
+  height: 100vh;
+  max-height: 110vh;
+  overflow: hidden;
+  position: relative;
+
+  & .home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .text-container-header {
+      width: 900px;
+      height: 645px;
+      background: $color-div;
+      border: 3px solid black;
+      padding: 20px;
+      margin-left: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      transform: translateX(-200%);
+      visibility: hidden;
+      opacity: 0;
+      transition: 1s ease-in-out;
+
+      & #text1 {
+        visibility: hidden;
+        opacity: 0;
+        animation: text-left 2s ease 7s forwards;
+        transition: 0.5s ease;
+      }
+      @keyframes text-left {
+        0% {
+          opacity: 0;
+          visibility: hidden;
+          transform: translateX(250%);
+        }
+        100% {
+          opacity: 1;
+          visibility: visible;
+          transform: translateX(0%);
+        }
+      }
+      & #text2 {
+        opacity: 0;
+        animation: text-up 2s 7.5s forwards linear;
+        transition: 0.5s ease;
+      }
+      @keyframes text-up {
+        0% {
+          opacity: 0;
+          transform: translateY(50%);
+          transition: 0.5s;
+        }
+        50% {
+          opacity: 1;
+          transform: translateY(-20%);
+          transition: 0.5s;
+        }
+
+        80% {
+          opacity: 1;
+          transform: translateY(30%);
+          transition: 0.5s;
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateY(0%);
+          transition: 0.5s;
+        }
+      }
+
+      & #text3 {
+        opacity: 0;
+        transform: scale(0);
+        animation: scaleText 2s 9s forwards linear;
+        transition: 0.5s ease;
+      }
+      @keyframes scaleText {
+        0% {
+          opacity: 1;
+          transform: scale(0);
+        }
+
+        50% {
+          opacity: 1;
+          transform: scale(1.05);
+        }
+
+        80% {
+          opacity: 1;
+          transform: scale(0.9);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      & #text4 {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(100vw);
+        transition: 0.5s ease;
+        animation: text-left 2s 11s forwards linear;
+      }
+
+      & #text5 {  
+        opacity: 0;
+        animation: text-up 2s 12s forwards linear;      
+        transition: 0.5s ease;
+      }
+
+      & #text6 {        
+        opacity: 0;
+        transform: scale(0);
+        animation: scaleText 2s 13s forwards linear;
+        transition: 0.5s ease;
+      }
+
+      & p {
+        font-family: $font-paragraph-light;
+        font-size: 16px;
+      }
+    }
+
+    & .image-header {
+      width: 524px;
+      height: 685px;
+      transform: translateX(85%);
+
+      & img {
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+        transition: all 0.2s;
+      }
+      & img:hover {
+        cursor: pointer;
+        border: 5px solid black;
+        transform: scale(0.95);
+      }
+    }
+  }
+  & .arrow-down-home {
+    position: absolute;
+    bottom: 15px;
+    right: 50%;       
+  }
+  & .arrow-down-home:hover {
+    cursor: pointer;  
+    animation: arrow-down-home 1s infinite;
+    transform: translateY(-10%);  
+    transition: 0.8s ease;
+    
+  }
+  @keyframes arrow-down-home {    
+    0% {
+      transform: translateY(-10%);
+    }  
+    50% {
+      transform: translateY(10%);
+    }  
+    100% {
+      transform: translateY(-10%);
+    } 
+    
+
+  }    
 }

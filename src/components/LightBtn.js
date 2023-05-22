@@ -4,10 +4,10 @@ const LightBtn = () => {
   return (
     <>
       <div className="toggle-switch">
-        <span>Dark</span>
+        <span id="dark_mode">Dark</span>
         <input type="checkbox" id="switch" />
         <label htmlFor="switch">toggle</label>
-        <span>Light</span>
+        <span id="light-mode">Light</span>
       </div>
     </>
   );
