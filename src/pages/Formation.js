@@ -6,7 +6,6 @@ import gameboy from "../assets/images/game.webp";
 import ruy from "../assets/videos/ruy.gif";
 import missCamille from "../assets/images/IMG_0056.jpg";
 import logoCamille from "../assets/videos/Logo.gif";
-import { IconCircleChevronDown } from "@tabler/icons-react";
 
 const Formation = () => {
   return (
@@ -46,13 +45,16 @@ const Formation = () => {
 
             <h5>
               Projet :{" "}
-              <a href="https://museum-sheet-cheat.netlify.app">
+              <a target="_blank" href="https://museum-sheet-cheat.netlify.app">
                 Museum Sheet Cheat
               </a>
             </h5>
             <h6>
               Github :{" "}
-              <a href="https://github.com/widmaker666/MuseumSheetCheat_Plateform">
+              <a
+                target="_blank"
+                href="https://github.com/widmaker666/MuseumSheetCheat_Plateform"
+              >
                 Projet Github
               </a>
             </h6>
@@ -100,11 +102,16 @@ const Formation = () => {
 
             <h5>
               Projet :{" "}
-              <a href="https://oldschoolgaming.fly.dev">Old Skool Gaming</a>
+              <a target="_blank" href="https://oldschoolgaming.fly.dev">
+                Old Skool Gaming
+              </a>
             </h5>
             <h6>
               Github :{" "}
-              <a href="https://github.com/widmaker666/Old_Skool_Gaming_Site_web">
+              <a
+                target="_blank"
+                href="https://github.com/widmaker666/Old_Skool_Gaming_Site_web"
+              >
                 Projet Github
               </a>
             </h6>
@@ -161,13 +168,19 @@ const Formation = () => {
 
             <h5>
               Projet :{" "}
-              <a href="https://miss-camille-bijoux.netlify.app/">
+              <a
+                target="_blank"
+                href="https://miss-camille-bijoux.netlify.app/"
+              >
                 Miss Camille Vitrine
               </a>
             </h5>
             <h6>
               Github :{" "}
-              <a href="https://github.com/widmaker666/site-vitrine_miss-camille">
+              <a
+                target="_blank"
+                href="https://github.com/widmaker666/site-vitrine_miss-camille"
+              >
                 Projet Github (private)
               </a>
             </h6>
@@ -190,12 +203,9 @@ const Formation = () => {
           </div>
           <div className="techno-container">
             <h5>Technologies utilisées : </h5>
-            <p>
-              Javascript / SASS / HTML / CSS / Netlify / Github / EmailJS 
-            </p>
+            <p>Javascript / SASS / HTML / CSS / Netlify / Github / EmailJS</p>
           </div>
         </div>
-        
       </section>
     </>
   );

@@ -86,7 +86,7 @@ header {
       }
       & li:last-child:hover {
         cursor: pointer;
-        animation: myAnim 2s ease 0s infinite normal forwards;
+        animation: linkedin 2s ease 0s infinite normal forwards;
       }
       //- Animation de li //
       @keyframes left-right {
@@ -159,7 +159,7 @@ header {
           transform: translateY(0px);
         }
       }
-      @keyframes myAnim {
+      @keyframes linkedin {
         0% {
           transform: scale3d(1, 1, 1);
         }
