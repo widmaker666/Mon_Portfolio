@@ -4,6 +4,7 @@ import Title from "./Title";
 import LightBtn from "../components/LightBtn";
 import PhotoHeader from "../assets/images/header.webp";
 import { IconCircleChevronDown } from "@tabler/icons-react";
+import Formation from "./Formation";
 
 const Home = () => {
   const handleClickImg = () => {
@@ -88,6 +89,10 @@ const Home = () => {
             <IconCircleChevronDown size={51} color="black" stroke={1} />
           </a>
         </div>
+      </section>
+      <section id="formation">
+        <br />
+        <Formation/>
       </section>
     </>
   );

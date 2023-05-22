@@ -1,0 +1,213 @@
+section.formation {
+  min-height: 100vh;
+  height: 100vh;
+  max-height: 120vh;
+
+  & .title-container {
+    width: 100%;
+    height: 200px;
+    background: $color-div;
+    border: 3px solid black;
+    border-right: none;
+    border-left: none;
+
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & h1 {
+      text-transform: uppercase;
+      font-family: $font-title;
+      font-size: 50px;
+      text-shadow: -5px 4px 7px rgba(0, 0, 0, 0.27);
+      letter-spacing: 10px;
+    }
+
+    & h2 {
+      text-transform: capitalize;
+      font-family: $font-paragraph-light;
+      font-weight: 100;
+      font-size: 30px;
+      letter-spacing: 10px;
+    }
+
+    & p {
+      font-family: $font-paragraph-reg;
+      font-weight: 1000;
+      font-size: 15px;
+      letter-spacing: 5px;
+    }
+  }
+  .msc {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "title title title title"
+      "img1 prez prez img2"
+      "uses uses uses uses"
+      "logo techno techno techno";
+    text-align: center;   
+
+    & .title-mid {
+      grid-area: title;
+      width: 1000px;
+      height: 56px;
+      background: $color-div;
+      border: 3px solid black;
+      margin: 100px auto;      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      & h3 {
+        font-family: $font-paragraph-light;
+        font-weight: 100;
+        font-size: 30px;
+        letter-spacing: 5px;
+        color: $color-text;
+
+        & span {
+          color: black;
+        }
+      }
+    }
+    & .paint-1 {
+      grid-area: img1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & img {
+        width: 200px;
+        height: auto;
+        border: 8px solid black;
+      }
+    }
+    & .paint-2 {
+      grid-area: img2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & img {
+        width: 200px;
+        height: auto;
+        border: 2px solid black;
+      }
+    }
+    & .prez-container {
+      grid-area: prez;
+      width: 740px;
+      height: 260px;
+      background: $color-div;
+      border: 3px solid black;
+      display: flex;
+      margin: 0 auto;            
+      flex-direction: column;
+      padding: 20px;
+
+      & p {
+        font-family: $font-paragraph-light;
+        font-size: 19px;
+        letter-spacing: 2px;
+        margin: 20px auto 30px auto;        
+      }
+
+      & h5 {
+        font-family: $font-paragraph-light;
+        font-size: 19px;
+        letter-spacing: 2px;
+        margin: 10px auto 10px auto; 
+
+        & a {
+            text-decoration: none;
+            font-weight: 100;
+            transition: 0.8s ;
+        }
+
+        & a:visited {
+            text-decoration: none;
+            color: black;
+        }
+        & a:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            color: $color-link;
+            transition: 0.5s;
+        }
+      }
+      & h6 {
+        font-family: $font-paragraph-light;
+        font-size: 19px;
+        letter-spacing: 2px;
+        margin: 10px auto 10px auto; 
+
+        & a {
+            text-decoration: none;
+            font-weight: 100;
+            transition: 0.8s ;
+        }
+
+        & a:visited {
+            text-decoration: none;
+            color: black;
+        }
+        & a:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            color: $color-link;
+            transition: 0.5s;
+        }
+      }
+
+      
+    }
+    & .utilities-container {
+      grid-area: uses;
+      display: flex;
+      text-align: left;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 50px;
+      margin: 20px;
+      width: 1190px;
+      height: 260px;
+      border: 3px solid black;
+      line-height: 35px;
+      background: $color-div;      
+      
+      & ul {
+        display: flex;
+        flex-direction: column;
+        
+        & li {
+            font-family: $font-paragraph-reg;
+            font-size: 16px;
+            letter-spacing: 5px;
+        }
+      }
+
+    }
+
+    & .logo-msc {
+      grid-area: logo;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & img {
+        width: 200px;
+        height: auto;
+        border: 2px solid black;
+      }
+    }
+    & .techno-container {
+      grid-area: techno;
+    }
+  }
+}

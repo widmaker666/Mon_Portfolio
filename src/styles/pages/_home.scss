@@ -109,13 +109,13 @@
         animation: text-left 2s 11s forwards linear;
       }
 
-      & #text5 {  
+      & #text5 {
         opacity: 0;
-        animation: text-up 2s 12s forwards linear;      
+        animation: text-up 2s 12s forwards linear;
         transition: 0.5s ease;
       }
 
-      & #text6 {        
+      & #text6 {
         opacity: 0;
         transform: scale(0);
         animation: scaleText 2s 13s forwards linear;
@@ -149,26 +149,28 @@
   & .arrow-down-home {
     position: absolute;
     bottom: 15px;
-    right: 50%;       
+    right: 50%;
   }
   & .arrow-down-home:hover {
-    cursor: pointer;  
+    cursor: pointer;
     animation: arrow-down-home 1s infinite;
-    transform: translateY(-10%);  
+    transform: translateY(-10%);
     transition: 0.8s ease;
-    
   }
-  @keyframes arrow-down-home {    
+  @keyframes arrow-down-home {
     0% {
       transform: translateY(-10%);
-    }  
+    }
     50% {
       transform: translateY(10%);
-    }  
+    }
     100% {
       transform: translateY(-10%);
-    } 
-    
+    }
+  }
+}
 
-  }    
+section#formation {
+  min-height: 100vh;
+  height: 500vh;
 }
