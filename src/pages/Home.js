@@ -3,7 +3,10 @@ import Navbar from "../components/Navbar";
 import Title from "./Title";
 import LightBtn from "../components/LightBtn";
 import PhotoHeader from "../assets/images/header.webp";
-import { IconCircleChevronDown } from "@tabler/icons-react";
+import {
+  IconCircleChevronDown,
+  IconCircleChevronUp,
+} from "@tabler/icons-react";
 import Formation from "./Formation";
 
 const Home = () => {
@@ -15,7 +18,7 @@ const Home = () => {
     container.style.transform = "none";
     //! Click img
     imgContainer.style.cursor = "none";
-    imgContainer.style.transform = "translateX(-80%)";    
+    imgContainer.style.transform = "translateX(-80%)";
     imgContainer.style.border = "3px solid black";
     imgContainer.style.borderRadius = "0 0 0 400px";
     imgContainer.style.transition = "0.8s ease-in-out";
@@ -35,7 +38,7 @@ const Home = () => {
               onClick={handleClickImg}
               id="imgContainer"
             />
-          </div>          
+          </div>
           <div className="text-container-header" id="container">
             <div>
               <p id="text1">
@@ -92,7 +95,12 @@ const Home = () => {
       </section>
       <section id="formation">
         <br />
-        <Formation/>
+        <Formation />
+        <div className="arrow-up-home">
+          <a href="#home" id="arrow">
+            <IconCircleChevronUp size={51} color="black" stroke={1} />
+          </a>
+        </div>
       </section>
     </>
   );

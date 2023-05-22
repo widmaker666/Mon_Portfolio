@@ -172,5 +172,29 @@
 
 section#formation {
   min-height: 100vh;
-  height: 500vh;
+  height: 450vh;
+  position: relative;
+
+  & .arrow-up-home {
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+  }
+  & .arrow-up-home:hover {
+    cursor: pointer;
+    animation: arrow-up-home 1s infinite;
+    transform: translateY(-10%);
+    transition: 0.8s ease;
+  }
+  @keyframes arrow-up-home {
+    0% {
+      transform: translateY(-10%);
+    }
+    50% {
+      transform: translateY(10%);
+    }
+    100% {
+      transform: translateY(-10%);
+    }
+  }
 }
