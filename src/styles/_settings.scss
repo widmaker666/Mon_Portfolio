@@ -11,10 +11,15 @@
   font-family: "paragraph-light";
   src: url("../assets/fonts/MADEINFINITY\ PERSONALUSE-Light.otf ");
 }
+@font-face {
+  font-family: "italiana";
+  src: url("../assets/fonts/Italiana-Regular.ttf");
+}
 
 $font-title: "title";
 $font-paragraph-reg: "paragraph-reg";
 $font-paragraph-light: "paragraph-light";
+$font-msc: "italiana";
 
 //* Colors //
 $color-btn: #97ffae;

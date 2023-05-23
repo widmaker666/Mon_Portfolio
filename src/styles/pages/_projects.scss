@@ -1,0 +1,243 @@
+//* Page principale projet //
+section.project {
+  min-height: 100vh;
+  height: 500vh;
+  overflow-x: hidden;
+
+  & .intro-container {
+    position: relative;
+    & .grid-intro {
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        "img1 text1 img2"
+        "text2 text2 text2"
+        "img3 text3 text3";
+
+      height: 85vh;
+
+      & .img-msc {
+        grid-area: img1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        animation: img1 5s ease 0s infinite normal forwards;
+        & img {
+          width: 60%;
+          height: auto;
+        }
+        @keyframes img1 {
+          0% {
+            opacity: 1;
+          }
+
+          50% {
+            opacity: 0.2;
+          }
+
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+      & .img-miss {
+        grid-area: img2;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        animation: img2 15s ease 0s infinite normal forwards;
+        & img {
+          width: 300px;
+          height: auto;
+          border: 3px solid #dfb51f;
+        }
+        @keyframes img2 {
+          0%,
+          100% {
+            transform: translateX(0);
+          }
+
+          10%,
+          30%,
+          50%,
+          70% {
+            transform: translateX(-10px);
+          }
+
+          20%,
+          40%,
+          60% {
+            transform: translateX(10px);
+          }
+
+          80% {
+            transform: translateX(8px);
+          }
+
+          90% {
+            transform: translateX(-8px);
+          }
+        }
+      }
+      & .img-game {
+        grid-area: img3;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        animation: game 5s ease 0s infinite normal forwards;
+        & img {
+          height: 300px;
+          width: auto;
+        }
+        @keyframes game {
+          0% {
+            animation-timing-function: ease-in;
+            opacity: 1;
+            transform: translateY(-45px);
+          }
+
+          24% {
+            opacity: 1;
+          }
+
+          40% {
+            animation-timing-function: ease-in;
+            transform: translateY(-24px);
+          }
+
+          65% {
+            animation-timing-function: ease-in;
+            transform: translateY(-12px);
+          }
+
+          82% {
+            animation-timing-function: ease-in;
+            transform: translateY(-6px);
+          }
+
+          93% {
+            animation-timing-function: ease-in;
+            transform: translateY(-4px);
+          }
+
+          25%,
+          55%,
+          75%,
+          87% {
+            animation-timing-function: ease-out;
+            transform: translateY(0px);
+          }
+
+          100% {
+            animation-timing-function: ease-out;
+            opacity: 1;
+            transform: translateY(0px);
+          }
+        }
+      }
+
+      & .text1 {
+        grid-area: text1;
+        text-transform: uppercase;
+        font-family: $font-title;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      & .text2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: text2;
+        text-transform: uppercase;
+        font-family: $font-title;
+        font-size: 50px;
+      }
+      & .text3 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        grid-area: text3;
+        text-transform: uppercase;
+        font-family: $font-title;
+        font-size: 50px;
+        padding-left: 50px;
+      }
+    }
+  }
+  & .arrow-right {
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+  }
+}
+
+//* Page MSC //
+.msc-carousel {
+  background: url("../../assets/images/marbre.webp") center/cover;
+  height: 100vh;
+
+  & .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .carousel {
+      width: 980px;
+      height: 710px;
+      margin-top: 30px;
+      border: 5px solid black;
+      filter: drop-shadow(8px 11px 4px rgba(0, 0, 0, 0.25));
+      position: relative;
+//- Faire les animation en changeant l'index grace à un onClick en JS sur le bouton de la flèche qui fera avancer ou reculer l'image en zIndex puis faire un hover sur chaque image pour montrer plus de screenshot du site !
+
+//! Il va aussi falloir changer tout le style de la page à chaque changement de style ? mais comment faire walla ?
+
+      & .img-1 {
+        width: 100%;
+        height: 100%;
+
+        & img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+        }
+      }
+      & .img-2 {
+        width: 100%;
+        height: 100%;
+
+        & img {
+          position: absolute;
+          bottom: 0%;
+          width: 100%;
+          height: 100%;
+          z-index: 0;
+        }
+      }
+      & .img-3 {
+        width: 100%;
+        height: 100%;
+
+        & img {
+          position: absolute;
+          bottom: 0%;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+        }
+      }
+    }
+    & .switch-right {
+      position: absolute;
+      right: 15%;
+    }
+    & .switch-left {
+      position: absolute;
+      left: 15%;
+    }
+  }
+}

@@ -7,7 +7,7 @@ const Navbar = () => {
     <>
       <div className="navbar-container">
         <div className="logo">
-          <a href="#header">
+          <a href="/">
             <img src={Logo} alt="" />
           </a>
         </div>
