@@ -58,9 +58,13 @@ header {
       display: flex;
       justify-content: center;
       margin: 80px auto;
+      
 
       & li {
         margin: 0 80px;
+        & a {
+          color: #001219;
+        }
         & a:visited,
         a:active {
           color: black;

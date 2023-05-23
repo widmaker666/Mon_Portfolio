@@ -4,18 +4,25 @@ main.main-404 {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
   margin: 0;
-  background: #131313;
+  background: #0068a8;
   color: #fff;
   font-size: 15rem;
   font-family: "Fira Mono", monospace;
   letter-spacing: 0px;
+  position: relative;
+  
+  & .music {
+    position: absolute;
+    top: -150px;
+  }
 }
 
 div.div-404 {
+  margin-bottom: 250px;
   animation: glitch 1s linear infinite;
 }
 
@@ -79,6 +86,61 @@ div.div-404:after {
     transform: translate(-22px, 5px) skew(21deg);
   }
 }
+.img-container {
+  position: relative;
+
+  & #pain {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: -200px;
+    right: -250px;
+  }
+  & #ver {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: -500px;
+    right: -400px;
+  }
+  & #bouche {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 50px;
+    right: -300px;
+  }
+  & #reveil {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: -300px;
+    right: 120px;
+  }
+  & #cloche {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    top: -100px;
+    right: 200px;
+  }
+  & #jesus {
+    position: absolute;
+    height: 300px;
+    width: auto;
+    top: -320px;
+    left: -80px;
+  }
+}
+
+.title-404 {
+  display: flex;
+
+  & h1 {
+    font-size: 25px;    
+  }
+}
+
 
 button {
   background: transparent;
@@ -86,8 +148,9 @@ button {
   transition: 1s;
 
   & a {
-    color: $color-btn;
+    color: black;
     font-family: $font-title;
+    font-weight: 800;
     text-underline-offset: 10px;
     transition: 1s ease-in-out;
 
