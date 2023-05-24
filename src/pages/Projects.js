@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import { IconSquareChevronLeft, IconSquareChevronRight } from "@tabler/icons-react";
+import {
+  IconSquareChevronLeft,
+  IconSquareChevronRight,
+} from "@tabler/icons-react";
 import msc from "../assets/images/logoMsc.webp";
 import game from "../assets/images/game.webp";
 import miss from "../assets/videos/Logo.gif";
-import mscWeb from "../assets/images/museum.webp";
-import oldskool from "../assets/images/FireShot Capture 009 - Oldskoolgaming - oldschoolgaming.fly.dev.png";
-import missCamille from "../assets/images/missCamille.webp";
-import NavbarMsc from "../components/NavbarMsc";
+import { NavLink } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -37,33 +37,10 @@ const Projects = () => {
           </div>
         </div>
         <div className="arrow-right">
-          <a href="#msc">
-            <IconSquareChevronRight size={100} color="black" stroke={1.5} />
-          </a>
+        <NavLink className="navlink" to="/projects/carousels">
+          <IconSquareChevronRight size={100} color="black" stroke={1.5} />
+          </NavLink>
         </div>
-        <section className="msc-carousel" id="msc">
-          <NavbarMsc />
-          <div className="carousel-container">
-            {/* pour le carousel grâce à une animation css en hover faire passer différentes photos du projet MSC et des autres projets selon le projets */}
-            <button className="switch-left">
-              <IconSquareChevronLeft size={70} color="black" stroke={1.5} />
-            </button>
-            <div className="carousel">
-              <div className="img-1">
-                <img id="mscWeb" src={mscWeb} alt="" />
-              </div>
-              <div className="img-2">
-                <img id="oldskool" src={oldskool} alt="" />
-              </div>
-              <div className="img-3">
-                <img id="missCamille" src={missCamille} alt="" />
-              </div>
-            </div>
-            <button className="switch-right">
-              <IconSquareChevronRight size={70} color="black" stroke={1.5} />
-            </button>
-          </div>
-        </section>
       </section>
     </>
   );

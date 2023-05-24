@@ -1,4 +1,4 @@
-.navbar-container {
+.navbar-container2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,14 +16,14 @@
       justify-content: space-around;
       align-items: center;
   
-      & .navlink {
+      & .navlink2 {
         text-decoration: none;
         overflow: hidden;
         position: relative;
         z-index: 0;
       }
   
-      & .navlink::before {
+      & .navlink2::before {
         content: "";
         position: absolute;
         top: 100px;
@@ -35,7 +35,7 @@
         transition: all 0.3s;
       }
   
-      & .navlink:hover::before {
+      & .navlink2:hover::before {
         cursor: pointer;
         top: 0px;      
       }

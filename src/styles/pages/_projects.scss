@@ -1,8 +1,9 @@
 //* Page principale projet //
 section.project {
   min-height: 100vh;
-  height: 500vh;
-  overflow-x: hidden;
+  height: 100vh;
+  overflow: hidden;
+
 
   & .intro-container {
     position: relative;
