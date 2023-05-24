@@ -94,7 +94,7 @@ const Home = () => {
         </div>
       </section>
       <section id="formation">
-        <br />
+       
         <Formation />
         <div className="arrow-up-home">
           <a href="#home" id="arrow">

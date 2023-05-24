@@ -1,20 +1,8 @@
 //* Page MSC //
-.msc-carousel {
-  max-height: 100vh;
 
-  & .title-msc {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    & h1 {
-      font-family: $font-msc;
-      font-weight: 100;
-      font-size: 60px;
-      text-decoration: 1px underline;
-      text-underline-offset: 8px;
-    }
-  }
+.msc-carousel {
+  height: 100vh;
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
 
   & .carousel-container {
     display: flex;
@@ -22,11 +10,13 @@
     align-items: center;
 
     & .carousel {
-      width: 880px;
-      height: 610px;
+      width: 980px;
+      height: 710px;
       margin-top: 30px;
       border: 5px solid black;
-      filter: drop-shadow(8px 11px 4px rgba(0, 0, 0, 0.25));
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       position: relative;
 
       & .img-1 {
@@ -40,9 +30,19 @@
           width: 100%;
           height: 100%;
           z-index: 1;
-         
+          transition: 0.5s;
+
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            border: 4px solid goldenrod;
+            border-bottom: none;
+            transition: 0.5s ease-in-out;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          }
         }
-        
       }
       & .img-2 {
         width: 100%;
@@ -55,10 +55,20 @@
           bottom: 0%;
           width: 100%;
           height: 100%;
+          transition: 0.5s;
+
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            border: 5px solid black;
+            transition: 0.5s ease-in-out;
+            box-shadow: 10px 8px 0px 2px rgba(0, 0, 0, 1);
+            -webkit-box-shadow: 10px 8px 0px 2px rgba(0, 0, 0, 1);
+            -moz-box-shadow: 10px 8px 0px 2px rgba(0, 0, 0, 1);
+          }
         }
-       
-        }
-      
+      }
+
       & .img-3 {
         width: 100%;
         height: 100%;
@@ -71,8 +81,15 @@
           width: 100%;
           height: 100%;
           z-index: -1;
+          transition: 0.5s;
+
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            border: 5px solid goldenrod;
+            transition: 0.5s ease-in-out;
+          }
         }
-      
       }
     }
     & .switch-right {

@@ -3,7 +3,7 @@ section.project {
   min-height: 100vh;
   height: 100vh;
   overflow: hidden;
-
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
 
   & .intro-container {
     position: relative;
@@ -27,6 +27,9 @@ section.project {
         & img {
           width: 60%;
           height: auto;
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
         }
         @keyframes img1 {
           0% {
@@ -52,6 +55,9 @@ section.project {
           width: 300px;
           height: auto;
           border: 3px solid #dfb51f;
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
         }
         @keyframes img2 {
           0%,
@@ -146,6 +152,7 @@ section.project {
         display: flex;
         justify-content: center;
         align-items: center;
+        text-shadow: 6px 5px 5px rgba(0,0,0,0.43);
       }
       & .text2 {
         display: flex;
@@ -155,6 +162,7 @@ section.project {
         text-transform: uppercase;
         font-family: $font-title;
         font-size: 50px;
+        text-shadow: 6px 5px 5px rgba(0,0,0,0.43);
       }
       & .text3 {
         display: flex;
@@ -165,6 +173,8 @@ section.project {
         font-family: $font-title;
         font-size: 50px;
         padding-left: 50px;
+        text-shadow: 6px 5px 5px rgba(0,0,0,0.43);
+        
       }
     }
   }
@@ -174,5 +184,3 @@ section.project {
     right: 100px;
   }
 }
-
-

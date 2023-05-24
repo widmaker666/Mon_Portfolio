@@ -4,6 +4,11 @@
   max-height: 110vh;
   overflow: hidden;
   position: relative;
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  border: 3px solid black;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
 
   & .home-container {
     display: flex;
@@ -20,6 +25,9 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 
       transform: translateX(-200%);
       visibility: hidden;
@@ -138,6 +146,9 @@
         height: 100%;
         border: 1px solid black;
         transition: all 0.2s;
+        box-shadow: -7px 12px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: -7px 12px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -7px 12px 5px 0px rgba(0, 0, 0, 0.75);
       }
       & img:hover {
         cursor: pointer;
