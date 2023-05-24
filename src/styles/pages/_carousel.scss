@@ -1,7 +1,20 @@
 //* Page MSC //
 .msc-carousel {
-  background: url("../../assets/images/marbre.webp") center/cover;
-  height: 100vh;
+  max-height: 100vh;
+
+  & .title-msc {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    & h1 {
+      font-family: $font-msc;
+      font-weight: 100;
+      font-size: 60px;
+      text-decoration: 1px underline;
+      text-underline-offset: 8px;
+    }
+  }
 
   & .carousel-container {
     display: flex;
@@ -9,126 +22,33 @@
     align-items: center;
 
     & .carousel {
-      width: 980px;
-      height: 710px;
+      width: 880px;
+      height: 610px;
       margin-top: 30px;
       border: 5px solid black;
       filter: drop-shadow(8px 11px 4px rgba(0, 0, 0, 0.25));
       position: relative;
-      //- Faire les animation en changeant l'index grace à un onClick en JS sur le bouton de la flèche qui fera avancer ou reculer l'image en zIndex puis faire un hover sur chaque image pour montrer plus de screenshot du site !
-
-      //! Il va aussi falloir changer tout le style de la page à chaque changement de style ? mais comment faire walla ?
 
       & .img-1 {
         width: 100%;
         height: 100%;
+        position: absolute;
+        bottom: 0;
 
         & #mscWeb {
           position: absolute;
           width: 100%;
           height: 100%;
+          z-index: 1;
+         
         }
-        & #mscWeb1 {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          opacity: 0;
-          animation: transitionImg1 5s 2s forwards linear;
-
-          @keyframes transitionImg1 {
-            0% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
-        }
-        & #mscWeb2 {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          opacity: 0;
-          animation: transitionImg2 5s 8s forwards linear;
-          &:hover {
-            cursor: pointer;
-          }
-          @keyframes transitionImg2 {
-            0% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
-        }
-        & #mscWeb3 {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          opacity: 0;
-          animation: transitionImg3 5s 13s forwards linear;
-
-          @keyframes transitionImg3 {
-            0% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
-        }
-        & #mscWeb4 {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          opacity: 0;
-          animation: transitionImg4 5s 18s forwards linear;
-          @keyframes transitionImg4 {
-            0% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
-        }
-        & #mscWeb5 {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          opacity: 0;
-          animation: transitionImg5 5s 23s forwards linear;
-
-          @keyframes transitionImg5 {
-            0% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
-        }
-        & #mscWeb6 {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          opacity: 0;
-          animation: transitionImg6 5s 28s forwards linear;
-
-          @keyframes transitionImg6 {
-            0% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
-        }
+        
       }
       & .img-2 {
         width: 100%;
         height: 100%;
+        position: absolute;
+        bottom: 0;
 
         & #oldskool {
           position: absolute;
@@ -136,224 +56,23 @@
           width: 100%;
           height: 100%;
         }
-        & #oldskool1 {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          z-index: 1;
-          opacity: 0;
-          animation: transitionOldImg1 5s 2s forwards linear;
-
-          @keyframes transitionOldImg1 {
-            0% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
+       
         }
-        & #oldskool2 {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          z-index: 1;
-          opacity: 0;
-          animation: transitionOldImg2 5s 8s forwards linear;
-          &:hover {
-            cursor: pointer;
-          }
-          @keyframes transitionOldImg2 {
-            0% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
-        }
-        & #oldskool3 {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          z-index: 1;
-          opacity: 0;
-          animation: transitionOldImg3 5s 13s forwards linear;
-
-          @keyframes transitionOldImg3 {
-            0% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
-        }
-        & #oldskool4 {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          z-index: 1;
-          opacity: 0;
-          animation: transitionOldImg4 5s 18s forwards linear;
-          @keyframes transitionOldImg4 {
-            0% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
-        }
-        & #oldskool5 {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          z-index: 1;
-          opacity: 0;
-          animation: transitionOldImg5 5s 23s forwards linear;
-
-          @keyframes transitionOldImg5 {
-            0% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
-        }
-        & #oldskool6 {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          z-index: 1;
-          opacity: 0;
-          animation: transitionOldImg6 5s 28s forwards linear;
-
-          @keyframes transitionOldImg6 {
-            0% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
-        }
-      }
+      
       & .img-3 {
         width: 100%;
         height: 100%;
+        position: absolute;
+        bottom: 0;
 
         & #missCamille {
           position: absolute;
           bottom: 0%;
           width: 100%;
           height: 100%;
-          z-index: 0;
+          z-index: -1;
         }
-        missCamille1 {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          z-index: 1;
-          opacity: 0;
-          animation: transitionOldImg1 5s 2s forwards linear;
-
-          @keyframes transitionMissImg1 {
-            0% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
-        }
-        & #missCamille2 {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          z-index: 1;
-          opacity: 0;
-          animation: transitionOldImg2 5s 8s forwards linear;
-          &:hover {
-            cursor: pointer;
-          }
-          @keyframes transitionMissImg2 {
-            0% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
-        }
-        & #missCamille3 {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          z-index: 1;
-          opacity: 0;
-          animation: transitionOldImg3 5s 13s forwards linear;
-
-          @keyframes transitionMissImg3 {
-            0% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
-        }
-        & #missCamille4 {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          z-index: 1;
-          opacity: 0;
-          animation: transitionOldImg4 5s 18s forwards linear;
-          @keyframes transitionMissImg4 {
-            0% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
-        }
-        & #missCamille5 {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          z-index: 1;
-          opacity: 0;
-          animation: transitionOldImg5 5s 23s forwards linear;
-
-          @keyframes transitionMissImg5 {
-            0% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
-        }
-        & #missCamille6 {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          z-index: 1;
-          opacity: 0;
-          animation: transitionOldImg6 5s 28s forwards linear;
-
-          @keyframes transitionMissImg6 {
-            0% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
-        }
+      
       }
     }
     & .switch-right {
