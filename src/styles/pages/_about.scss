@@ -1,0 +1,117 @@
+.formation {
+  height: 100vh;
+
+  & .title-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & h1 {
+      font-family: $font-title;
+      font-size: 40px;
+      font-weight: 100;
+      text-transform: uppercase;
+      text-decoration: 1px underline;
+      text-underline-offset: 8px;
+      padding: 20px;
+    }
+  }
+
+  & .photographe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+
+    & .text-photo {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & .title-photo {
+        padding: 30px;
+
+        & h4 {
+          font-family: $font-paragraph-reg;
+          font-size: 27px;
+          font-weight: 1000;
+          letter-spacing: 8px;
+        }
+      }
+
+      & .text-p {
+        width: 807px;
+        height: 578px;
+        display: flex;
+        flex-direction: column;        
+        padding: 20px;
+        margin-bottom: 50px;                
+        background: $color-div;
+        border: 3px solid black;
+        border-radius: 20px;
+        box-shadow: 13px 16px 4px #000000;
+
+        & p {
+            margin-top: 50px;
+            font-size: 1.2rem;
+            font-family: $font-paragraph-light;
+            letter-spacing: 2px;
+
+        }
+      }
+    }
+
+    & .img-photo {
+      display: flex;
+      width: 600px;
+      height: auto;
+      transform: rotate(-90deg);
+      border: 3px solid black;
+
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  & .social-photo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+    & .insta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & a {
+        color: black;
+        text-decoration: none;
+        padding-left: 20px;
+      }
+    }
+    & .facebook {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & a {
+        color: black;
+        text-decoration: none;
+        padding-left: 20px;
+      }
+    }
+    & .eyeem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & a {
+        color: black;
+        text-decoration: none;
+        padding-left: 20px;
+      }
+    }
+  }
+}
