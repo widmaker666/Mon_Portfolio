@@ -1,7 +1,6 @@
 .home {
   min-height: 80vh;
   height: 100vh;
-  max-height: 110vh;
   overflow: hidden;
   position: relative;
   background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
@@ -37,7 +36,7 @@
       & #text1 {
         visibility: hidden;
         opacity: 0;
-        animation: text-left 2s ease 7s forwards;
+        animation: text-left 0.5s ease 1s forwards;
         transition: 0.5s ease;
       }
       @keyframes text-left {
@@ -54,7 +53,7 @@
       }
       & #text2 {
         opacity: 0;
-        animation: text-up 2s 7.5s forwards linear;
+        animation: text-up 0.5s 7.5s forwards linear;
         transition: 0.5s ease;
       }
       @keyframes text-up {
@@ -182,8 +181,6 @@
 }
 
 section#formation {
-  min-height: 100vh;
-  height: 450vh;
   position: relative;
 
   & .arrow-up-home {

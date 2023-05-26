@@ -10,7 +10,7 @@ import logoCamille from "../assets/videos/Logo.gif";
 const Formation = () => {
   return (
     <>
-      <section className="formation">
+      <section className="formation-container">
         <div className="title-container">
           <div id="title">
             <h1>the hacking project</h1>

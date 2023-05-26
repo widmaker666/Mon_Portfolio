@@ -8,6 +8,7 @@ import {
   IconCircleChevronUp,
 } from "@tabler/icons-react";
 import Formation from "./Formation";
+import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
   const handleClickImg = () => {
@@ -42,38 +43,98 @@ const Home = () => {
           <div className="text-container-header" id="container">
             <div>
               <p id="text1">
-                Moi c’est Alexandre, nouveau depuis peu dans le monde du
-                développement web.
+                <TypeAnimation
+                  sequence={[
+                    `Moi c’est Alexandre, nouveau depuis peu dans le monde du
+                    développement web.`,
+                  ]}
+                  wrapper="span"
+                  cursor={true}
+                  speed={60}
+                  style={{
+                    fontSize: "1em",
+                    fontFamily: "$font-paragraph-light",
+                    display: "inline-block",
+                  }}
+                />
               </p>
             </div>
             <div id="text2">
               <p>
-                Formé par The Hacking Project avec plus de 1200h et le RNCP5
-                (Dev Web), plus un stage de 2 mois en entreprise pour Miss
-                Camille, créatrice de bijoux.
+                <TypeAnimation
+                  sequence={[
+                    ` Formé par The Hacking Project avec plus de 1200h et le RNCP5
+                    (Dev Web), plus un stage de 2 mois en entreprise pour Miss
+                    Camille, créatrice de bijoux.`,
+                  ]}
+                  wrapper="span"
+                  cursor={true}
+                  speed={60}
+                  style={{
+                    fontSize: "1em",
+                    fontFamily: "$font-paragraph-light",
+                    display: "inline-block",
+                  }}
+                />
               </p>
             </div>
             <div id="text3">
               <p>
-                Je veux me faire une place rapidement pour vous donner un aperçu
-                de qui je suis. Je n’ai peux être pour l’instant pas beaucoup de
-                choses à vous montrer mais ces choses existent pourtant et je
-                compte bien continuer à abreuver ma soif de connaissance dans ce
-                milieu qui me plaît de plus en plus à mesure que j’avance et que
-                je code.
+                <TypeAnimation
+                  sequence={[
+                    `Je veux me faire une place rapidement pour vous donner un aperçu
+                    de qui je suis. Je n’ai peux être pour l’instant pas beaucoup de
+                    choses à vous montrer mais ces choses existent pourtant et je
+                    compte bien continuer à abreuver ma soif de connaissance dans ce
+                    milieu qui me plaît de plus en plus à mesure que j’avance et que
+                    je code.`,
+                  ]}
+                  wrapper="span"
+                  cursor={true}
+                  speed={60}
+                  style={{
+                    fontSize: "1em",
+                    fontFamily: "$font-paragraph-light",
+                    display: "inline-block",
+                  }}
+                />
               </p>
             </div>
             <div id="text4">
               <p>
-                J’adore travailler en équipe car on ne peut que progresser grâce
-                aux autres. Mon but serait de pouvoir prendre les commandes
-                d’une équipe et devenir lead Dev d’un projet pour partager mes
-                connaissances et mener à bien le projet ensemble.
+                <TypeAnimation
+                  sequence={[
+                    `J’adore travailler en équipe car on ne peut que progresser grâce
+                    aux autres. Mon but serait de pouvoir prendre les commandes
+                    d’une équipe et devenir lead Dev d’un projet pour partager mes
+                    connaissances et mener à bien le projet ensemble.`,
+                  ]}
+                  wrapper="span"
+                  cursor={true}
+                  speed={60}
+                  style={{
+                    fontSize: "1em",
+                    fontFamily: "$font-paragraph-light",
+                    display: "inline-block",
+                  }}
+                />
               </p>
             </div>
             <div id="text5">
               <p>
-                Les technologies sur lesquelles j’ai travaillé sont :{" "}
+                <TypeAnimation
+                  sequence={[
+                    `Les technologies sur lesquelles j’ai travaillé sont : `,
+                  ]}
+                  wrapper="span"
+                  cursor={true}
+                  speed={60}
+                  style={{
+                    fontSize: "1em",
+                    fontFamily: "$font-paragraph-light",
+                    display: "inline-block",
+                  }}
+                />
                 <strong>
                   Ruby et Rails, Html, CSS, SASS, Javascript, ReactJS.
                 </strong>{" "}
@@ -81,7 +142,18 @@ const Home = () => {
             </div>
             <div id="text6">
               <p>
-                Mais j’aimerais me tourner vraiment sur
+                <TypeAnimation
+                  sequence={[`Mais j’aimerais me tourner vraiment sur : `]}
+                  wrapper="span"
+                  cursor={true}
+                  speed={60}
+                  style={{
+                    fontSize: "1em",
+                    fontFamily: "$font-paragraph-light",
+                    display: "inline-block",
+                  }}
+                />
+
                 <strong>JAVASCRIPT/REACT/NEXT/EXPRESS/VUE/PYTHON</strong>
               </p>
             </div>
@@ -94,7 +166,6 @@ const Home = () => {
         </div>
       </section>
       <section id="formation">
-       
         <Formation />
         <div className="arrow-up-home">
           <a href="#home" id="arrow">
