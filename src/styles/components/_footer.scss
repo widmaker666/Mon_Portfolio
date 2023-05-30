@@ -1,0 +1,27 @@
+.footer {
+  width: 100%;
+  height: 200px;
+  background: #f6f1e9;
+  border: 1px solid #19297c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-top: 50px;
+
+  & a {
+    margin-bottom: 50px;
+    position: absolute;
+    top: 30px;
+  }
+
+  & p {
+    position: absolute;
+    bottom: 20px;
+    font-size: 15px;
+    font-family: $font-paragraph-light;
+    transform: translateX(-50%);
+  }
+}
