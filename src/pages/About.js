@@ -22,7 +22,7 @@ import Footer from "../components/Footer";
 const About = () => {
   return (
     <>
-      <section className="formation" id="formation">
+      <section className="container-about" id="formation">
         <Navbar />
         <div className="formation-photo">
           <div className="title-main">
@@ -250,11 +250,11 @@ const About = () => {
                 </p>
               </div>
             </div>
-              <img src={king} alt="" />
+            <img src={king} alt="" />
           </div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 };

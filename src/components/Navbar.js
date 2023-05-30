@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../assets/images/signature-photo-removebg-preview.png";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -12,15 +12,15 @@ const Navbar = () => {
           </a>
         </div>
         <ul className="nav">
-          <NavLink className="navlink" to="/projects">
+          <Link className="navlink" to="/projects">
             <li>Projets</li>
-          </NavLink>
-          <NavLink className="navlink" to="/about">
+          </Link>
+          <Link className="navlink" to="/about">
             <li>A Propos</li>
-          </NavLink>
-          <NavLink className="navlink" to="/contact">
+          </Link>
+          <Link className="navlink" to="/contact">
             <li>Contact</li>
-          </NavLink>
+          </Link>
         </ul>
       </div>
     </>

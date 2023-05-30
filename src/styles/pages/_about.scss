@@ -1,9 +1,11 @@
-.formation {
-  min-height: 500vh;  
+section.container-about {
+  height: 640vh;  
   overflow-x: hidden;
+    
 
   //* Formation photographe //
   & .formation-photo {
+
     & .title-main {
       display: flex;
       justify-content: center;
