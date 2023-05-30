@@ -1,11 +1,9 @@
 section.container-about {
-  height: 640vh;  
+  height: 640vh;
   overflow-x: hidden;
-    
 
   //* Formation photographe //
   & .formation-photo {
-
     & .title-main {
       display: flex;
       justify-content: center;
@@ -130,6 +128,23 @@ section.container-about {
         justify-content: center;
         align-items: center;
 
+        & svg {
+          animation: instagram 1.8s ease-in-out 0s infinite normal both;
+        }
+        @keyframes instagram {
+          0% {
+            transform: scale(1);
+          }
+
+          50% {
+            transform: scale(1.1);
+          }
+
+          100% {
+            transform: scale(1);
+          }
+        }
+
         & a {
           color: black;
           text-decoration: none;
@@ -150,6 +165,7 @@ section.container-about {
             background-clip: text;
             color: transparent;
             transition: 0.5s ease;
+            transform: scale(1.15);
           }
         }
       }
@@ -157,6 +173,37 @@ section.container-about {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        & svg {
+          animation: facebook 6s linear 0s infinite alternate both;
+        }
+        @keyframes facebook {
+          0%,
+          100% {
+            transform: translateY(0) rotate(0);
+            transform-origin: 50% 50%;
+          }
+
+          15% {
+            transform: translateY(-18px) rotate(-2deg);
+          }
+
+          30% {
+            transform: translateY(15px) rotate(2deg);
+          }
+
+          45% {
+            transform: translateY(-8px) rotate(-2.6deg);
+          }
+
+          60% {
+            transform: translateY(6px) rotate(2deg);
+          }
+
+          75% {
+            transform: translateY(-6px) rotate(-1.2deg);
+          }
+        }
         & a {
           color: black;
           text-decoration: none;
@@ -175,6 +222,7 @@ section.container-about {
             background-clip: text;
             color: transparent;
             transition: 0.5s ease;
+            transform: scale(1.15);
           }
         }
       }
@@ -182,6 +230,20 @@ section.container-about {
         display: flex;
         justify-content: center;
         align-items: center;
+        & svg {
+          animation: eyeem 5s linear 0s infinite alternate both;
+        }
+
+        @keyframes eyeem {
+          0% {
+            transform: rotate(0);
+          }
+
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+
         & a {
           letter-spacing: 3px;
           color: black;
@@ -201,6 +263,7 @@ section.container-about {
             background-clip: text;
             color: transparent;
             transition: 0.5s ease;
+            transform: scale(1.15);
           }
         }
       }
@@ -283,6 +346,10 @@ section.container-about {
       align-items: center;
       text-align: center;
 
+      & svg {
+        animation: instagram 1.8s ease-in-out 0s infinite normal both;
+      }
+
       & .insta {
         display: flex;
         justify-content: center;
@@ -315,6 +382,11 @@ section.container-about {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        & svg {
+          animation: facebook 6s linear 0s infinite alternate both;
+        }
+
         & a {
           color: black;
           text-decoration: none;
@@ -340,6 +412,11 @@ section.container-about {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        & svg {
+          animation: eyeem 5s linear 0s infinite alternate both;
+        }
+
         & a {
           letter-spacing: 3px;
           color: black;
@@ -407,6 +484,9 @@ section.container-about {
         height: 892px;
         border: 3px solid #000000;
         border-radius: 0px 0px 200px 0px;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 1);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 1);
       }
     }
   }
@@ -452,6 +532,7 @@ section.container-about {
     & .jdr {
       display: flex;
       justify-content: space-evenly;
+      align-items: center;
       padding: 50px;
       margin: 50px auto;
 
@@ -466,6 +547,11 @@ section.container-about {
       }
 
       & .text1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
         & .description {
           width: 608px;
           height: 235px;
@@ -495,14 +581,16 @@ section.container-about {
         height: 317px;
         border: 3px solid #000000;
         border-radius: 0px 0px 200px 0px;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 1);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 1);
       }
     }
 
     & .amnesia {
       display: flex;
       justify-content: space-evenly;
-      display: flex;
-      justify-content: space-evenly;
+      align-items: center;
       padding: 50px;
       margin: 50px auto;
 
@@ -522,7 +610,9 @@ section.container-about {
           height: 235px;
           background: #f6f1e9;
           border: 3px solid #000000;
-          box-shadow: -13px 16px 4px #000000;
+          box-shadow: 13px 14px 5px 0px rgba(0, 0, 0, 1);
+          -webkit-box-shadow: 13px 14px 5px 0px rgba(0, 0, 0, 1);
+          -moz-box-shadow: 13px 14px 5px 0px rgba(0, 0, 0, 1);
           border-radius: 20px;
           display: flex;
           justify-content: center;
@@ -546,12 +636,16 @@ section.container-about {
         height: 477px;
         border: 3px solid #000000;
         border-radius: 0px 0px 0px 200px;
+        box-shadow: -11px 12px 5px 0px rgba(0, 0, 0, 1);
+        -webkit-box-shadow: -11px 12px 5px 0px rgba(0, 0, 0, 1);
+        -moz-box-shadow: -11px 12px 5px 0px rgba(0, 0, 0, 1);
       }
     }
 
     & .movies {
       display: flex;
       justify-content: space-evenly;
+      align-items: center;
 
       & h1 {
         font-family: $font-paragraph-reg;
@@ -591,9 +685,11 @@ section.container-about {
       & img {
         width: 564px;
         height: auto;
-
         border: 3px solid #000000;
         border-radius: 0px 0px 200px 0px;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 1);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 1);
       }
     }
   }
