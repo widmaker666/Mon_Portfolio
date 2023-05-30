@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import photo from "../assets/images/photograph2.webp";
 import imgPhoto from "../assets/images/concert.webp";
-import photoGuitar from "../assets/images/IMG_0112.jpg";
+import photoGuitar from "../assets/images/IMG_0112.webp";
 import cthulhu from "../assets/images/chtlhu.webp";
 import amnesia from "../assets/images/amnesia.webp";
 import king from "../assets/images/king.webp";

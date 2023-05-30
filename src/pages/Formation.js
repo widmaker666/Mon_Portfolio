@@ -4,7 +4,7 @@ import paint2 from "../assets/images/dali.webp";
 import LogoMsc from "../assets/images/logoMsc.webp";
 import gameboy from "../assets/images/game.webp";
 import ruy from "../assets/videos/ruy.gif";
-import missCamille from "../assets/images/IMG_0056.jpg";
+import missCamille from "../assets/images/IMG_0056.webp";
 import logoCamille from "../assets/videos/Logo.gif";
 
 const Formation = () => {
