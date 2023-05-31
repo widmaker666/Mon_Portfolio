@@ -2,7 +2,7 @@
 
 .msc-carousel {
   height: 100vh;
-background: url("../../assets/images/marbre.webp") center/cover;
+  background: url("../../assets/images/marbre.webp") center/cover;
   & .carousel-container {
     display: flex;
     justify-content: center;
@@ -12,7 +12,6 @@ background: url("../../assets/images/marbre.webp") center/cover;
       width: 980px;
       height: 710px;
       margin-top: 30px;
-      border: 5px solid black;
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -33,8 +32,8 @@ background: url("../../assets/images/marbre.webp") center/cover;
 
           &:hover {
             cursor: pointer;
-            transform: scale(1.05);
-            border: 4px solid goldenrod;
+            transform: scale(1.02);
+            border: 5px solid black;
             border-bottom: none;
             transition: 0.5s ease-in-out;
             box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -58,7 +57,7 @@ background: url("../../assets/images/marbre.webp") center/cover;
 
           &:hover {
             cursor: pointer;
-            transform: scale(1.05);
+            transform: scale(1.02);
             border: 5px solid black;
             transition: 0.5s ease-in-out;
             box-shadow: 10px 8px 0px 2px rgba(0, 0, 0, 1);
@@ -84,8 +83,8 @@ background: url("../../assets/images/marbre.webp") center/cover;
 
           &:hover {
             cursor: pointer;
-            transform: scale(1.05);
-            border: 5px solid goldenrod;
+            transform: scale(1.02);
+            border: 5px solid black;
             transition: 0.5s ease-in-out;
             box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
             -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -121,7 +120,6 @@ background: url("../../assets/images/marbre.webp") center/cover;
 //* Oldskool backgound //
 .old-carousel {
   height: 100vh;
-  
 
   & .carousel-container {
     display: flex;
@@ -132,7 +130,7 @@ background: url("../../assets/images/marbre.webp") center/cover;
       width: 980px;
       height: 710px;
       margin-top: 30px;
-      border: 5px solid black;
+
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -153,8 +151,8 @@ background: url("../../assets/images/marbre.webp") center/cover;
 
           &:hover {
             cursor: pointer;
-            transform: scale(1.05);
-            border: 4px solid goldenrod;
+            transform: scale(1.02);
+            border: 5px solid black;
             border-bottom: none;
             transition: 0.5s ease-in-out;
             box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -178,7 +176,7 @@ background: url("../../assets/images/marbre.webp") center/cover;
 
           &:hover {
             cursor: pointer;
-            transform: scale(1.05);
+            transform: scale(1.02);
             border: 5px solid black;
             transition: 0.5s ease-in-out;
             box-shadow: 10px 8px 0px 2px rgba(0, 0, 0, 1);
@@ -204,8 +202,8 @@ background: url("../../assets/images/marbre.webp") center/cover;
 
           &:hover {
             cursor: pointer;
-            transform: scale(1.05);
-            border: 5px solid goldenrod;
+            transform: scale(1.02);
+            border: 5px solid black;
             transition: 0.5s ease-in-out;
             box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
             -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -241,7 +239,6 @@ background: url("../../assets/images/marbre.webp") center/cover;
 //* Miss Camille carousel //
 .miss-carousel {
   height: 100vh;
-  
 
   & .carousel-container {
     display: flex;
@@ -252,7 +249,7 @@ background: url("../../assets/images/marbre.webp") center/cover;
       width: 980px;
       height: 710px;
       margin-top: 30px;
-      border: 5px solid black;
+
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -273,8 +270,8 @@ background: url("../../assets/images/marbre.webp") center/cover;
 
           &:hover {
             cursor: pointer;
-            transform: scale(1.05);
-            border: 4px solid goldenrod;
+            transform: scale(1.02);
+            border: 5px solid black;
             border-bottom: none;
             transition: 0.5s ease-in-out;
             box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -298,7 +295,7 @@ background: url("../../assets/images/marbre.webp") center/cover;
 
           &:hover {
             cursor: pointer;
-            transform: scale(1.05);
+            transform: scale(1.02);
             border: 5px solid black;
             transition: 0.5s ease-in-out;
             box-shadow: 10px 8px 0px 2px rgba(0, 0, 0, 1);
@@ -324,8 +321,8 @@ background: url("../../assets/images/marbre.webp") center/cover;
 
           &:hover {
             cursor: pointer;
-            transform: scale(1.05);
-            border: 5px solid goldenrod;
+            transform: scale(1.02);
+            border: 5px solid black;
             transition: 0.5s ease-in-out;
             box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
             -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);

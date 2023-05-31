@@ -16,24 +16,22 @@ import {
 import Navbar from "../components/Navbar";
 
 const Carousel = () => {
-  let count = 0;
+  const [count, setCount] = useState(1);
+  const projects = 2;
 
   const handleClickCarouselRight = () => {
-    if (count < 2) {
-      count++;
-    } else {
-      count = 1;
-    }
+    const addCount = count + 1;
+    setCount(count >= projects ? 1 : addCount);
     console.log(count);
-
     switch (count) {
       case 1:
         //! Old skool //
         document.getElementById("oldskool").style.zIndex = 1;
-        document.getElementById("oldskool").style.transition = "0.5s ease";
+        document.getElementById("oldskool").style.transition = "1s ease";
         document.querySelector(".switch-left").style.display = "block";
         document.querySelector(".old-carousel").style.background =
-          "radial-gradient( circle farthest-corner at 12.3% 19.3%,  rgba(85,88,218,1) 0%, rgba(95,209,249,1) 100.2% )";
+          "linear-gradient(0deg, #10162F 63%, #f0f0f0 100%)";
+          document.querySelector(".switch-left").style.display = "none";
         break;
       case 2:
         //! Old skool //
@@ -43,10 +41,11 @@ const Carousel = () => {
         document.getElementById("missCamille").style.zIndex = 1;
         document.querySelector(".miss-carousel").style.backgroundImage =
           "linear-gradient(180deg, #FAD961 0%, #F76B1C 33%, #000000 66%, #000000 100%)";
+        //! MSC //
+        document.getElementById("mscWeb").style.zIndex = 0;
         //! Arrow Switch //
         document.querySelector(".switch-right").style.display = "none";
         document.querySelector(".switch-left").style.display = "block";
-
         break;
 
       default:
@@ -55,8 +54,6 @@ const Carousel = () => {
   };
 
   const handleClickCarouselLeft = () => {
-    let count = 1;
-
     switch (count) {
       case 1:
         //! miss camille //
@@ -75,11 +72,16 @@ const Carousel = () => {
 
         break;
       case 2:
-//! miss camille //
+        //! miss camille //
         document.getElementById("missCamille").style.zIndex = 0;
-//! Arrow Switch //
-        document.getElementById("oldskool").style.zIndex = 1;
-//! Arrow Switch //
+        document.querySelector(".miss-carousel").style.backgroundImage = "none";
+        //! Arrow Switch //
+        document.getElementById("oldskool").style.zIndex = 2;
+        document.querySelector(".old-carousel").style.background =
+          "linear-gradient(180deg, #15186d 63%, #f0f0f0 100%)";
+        //! Arrow Switch //
+        document.getElementById("mscWeb").style.zIndex = 0;
+        //! Arrow Switch //
         document.querySelector(".switch-right").style.display = "block";
 
         break;
@@ -99,7 +101,7 @@ const Carousel = () => {
       className="msc-carousel old-carousel miss-carousel"
       id="mscCarousel"
     >
-      <Navbar />
+      <Navbar className="navbarChange" />
       <div className="carousel-container">
         {/* pour le carousel grâce à une animation css en hover faire passer différentes photos du projet MSC et des autres projets selon le projets */}
         <button className="switch-left" onClick={handleClickCarouselLeft}>

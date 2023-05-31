@@ -20,8 +20,10 @@ import BannerProf from "../components/BannerProf";
 import Footer from "../components/Footer";
 
 const About = () => {
+ 
   return (
     <>
+        
       <section className="container-about" id="formation">
         <Navbar />
         <div className="formation-photo">
