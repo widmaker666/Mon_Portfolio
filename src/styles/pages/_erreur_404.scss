@@ -14,7 +14,7 @@ main.main-404 {
   font-family: "Fira Mono", monospace;
   letter-spacing: 0px;
   position: relative;
-  
+
   & .music {
     position: absolute;
     top: -150px;
@@ -137,12 +137,11 @@ div.div-404:after {
   display: flex;
 
   & h1 {
-    font-size: 25px;    
+    font-size: 25px;
   }
 }
 
-
-button {
+.erreur404 {
   background: transparent;
   border: none;
   transition: 1s;
@@ -153,16 +152,17 @@ button {
     font-weight: 800;
     text-underline-offset: 10px;
     transition: 1s ease-in-out;
-
+    
     &:hover {
-      cursor: pointer;
-      animation: text-shadow 0.5s linear forwards;
-      transition: 1s linear;
+      cursor: pointer;      
+      animation: text-shadow 5s linear forwards;
+      transition: 1s linear;      
     }
     @keyframes text-shadow {
       0%,
       100% {
-        text-shadow: 1px -1px 27px rgba(255, 255, 255, 1);
+        text-shadow: 1px -1px 2px rgba(255, 255, 255, 1);
+        transition: 1s;
       }
     }
   }

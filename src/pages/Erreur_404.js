@@ -29,7 +29,7 @@ const Erreur_404 = () => {
           <img id="reveil" src={reveil} alt="" />
           <img id="jesus" src={jesus} alt="" />
         </div>
-        <button>
+        <button className="erreur404">
           <a href="/">Tu ferais mieux de retourner au début</a>
         </button>
       </main>

@@ -20,10 +20,11 @@ import BannerProf from "../components/BannerProf";
 import Footer from "../components/Footer";
 
 const About = () => {
- 
+
+
+
   return (
     <>
-        
       <section className="container-about" id="formation">
         <Navbar />
         <div className="formation-photo">
@@ -123,9 +124,7 @@ const About = () => {
           <div className="title-music">
             <h1>MUSICIEN AUTEUR / COMPOSITEUR (2011 - NOW)</h1>
           </div>
-
           <img src={imgPhoto} alt="" />
-
           <div className="description-music">
             <ul id="ul1">
               <li>

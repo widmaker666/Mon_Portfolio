@@ -23,21 +23,20 @@ $font-msc: "italiana";
 
 //* Colors //
 $color-btn: #97ffae;
-$color-div: #F6F1E9;
+$color-div: #f6f1e9;
 $color-text: #7c1960;
-$color-link: #0A9396;
+$color-link: #0a9396;
 
 //* ROOT //
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: none;
   list-style: none;
 }
 
 html {
-  scroll-behavior: smooth;  
+  scroll-behavior: smooth;
 }
 
 body {
