@@ -16,10 +16,21 @@
   src: url("../assets/fonts/Italiana-Regular.ttf");
 }
 
+@font-face {
+  font-family: game;
+  src: url("../assets/fonts/PressStart2P-Regular.ttf");
+}
+
+
 $font-title: "title";
 $font-paragraph-reg: "paragraph-reg";
 $font-paragraph-light: "paragraph-light";
 $font-msc: "italiana";
+$font-game: "game";
+
+:export {
+font-family: $font-game;
+}
 
 //* Colors //
 $color-btn: #97ffae;

@@ -9,14 +9,149 @@
     padding: 10px;
   }
 
-  & p {   
-    margin: 20px auto;
+  & p {
+    margin: 0px auto;
     width: 612px;
     height: 191px;
     font-family: $font-paragraph-light;
     text-align: center;
     font-size: 22px;
     line-height: 27px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .form-container {
+    height: 52.2%;
+
+    & .form-flex {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-family: $font-paragraph-reg;
+
+      & .name {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+
+        & label {
+          font-weight: 400;
+          font-size: 25px;
+          text-transform: uppercase;
+        }
+
+        & input {
+          font-family: $font-paragraph-light;
+          width: 530px;
+          height: 51px;
+          background: #f6f1e9;
+          border: 3px solid #000000;
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+          padding-left: 10px;
+          margin-top: 10px;
+        }
+        & input:focus {
+          background: black;
+          color: whitesmoke;
+        }
+        & input:hover {
+          cursor: pointer;
+        }
+      }
+
+      & .email {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+
+        & label {
+          font-weight: 400;
+          font-size: 25px;
+          text-transform: uppercase;
+        }
+
+        & input {
+          font-family: $font-paragraph-light;
+          width: 530px;
+          height: 51px;
+          background: #f6f1e9;
+          border: 3px solid #000000;
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+          padding-left: 10px;
+          margin-top: 10px;
+        }
+        & input:focus {
+          background: black;
+          color: whitesmoke;
+        }
+        & input:hover {
+          cursor: pointer;
+        }
+      }
+      & .description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+
+        & label {
+          font-weight: 400;
+          font-size: 25px;
+          text-transform: uppercase;
+        }
+
+        & textarea {
+          resize: none;
+          font-family: $font-paragraph-light;
+          width: 530px;
+          height: 101px;
+          background: #f6f1e9;
+          border: 3px solid #000000;
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+          padding: 10px;
+          margin-top: 10px;
+          display: flex;
+        }
+        & textarea:focus {
+          background: black;
+          color: whitesmoke;
+        }
+        & textarea:hover {
+          cursor: pointer;
+        }
+      }
+      & .btn-submit {
+        width: 36%;
+        height: 50px;
+        text-align: right;
+        margin: 10px;
+
+        & .submit {
+          width: 200px;
+          height: 100%;
+          font-family: $font-paragraph-reg;
+          text-transform: uppercase;
+          font-weight: 4;
+          font-size: 25px;
+          background: #f6f1e9;
+          border: 3px solid #000000;
+          text-align: center;
+        }
+
+        & .submit:hover {
+          cursor: pointer;
+          background: black;
+          color: white;
+        }
+      }
+    }
   }
 }

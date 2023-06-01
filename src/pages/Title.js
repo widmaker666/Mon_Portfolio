@@ -8,7 +8,7 @@ import React from "react";
 
 const Title = () => {
   return (
-    <header>
+    <header className="main-home">
       <div className="header" id="header">
         <h1>PORTFOLIO</h1>
         <div className="links-container">

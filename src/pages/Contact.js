@@ -1,8 +1,32 @@
-import React from "react";
+import React, { useRef } from "react";
 import Navbar from "../components/Navbar";
 import { TypeAnimation } from "react-type-animation";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const googleId = "service_cbcbrwa";
+  const templateId = "template_memsm0j";
+  const publicKey = `${process.env.REACT_APP_ID}`;
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(googleId, templateId, form.current, publicKey).then(
+      (result) => {
+        console.log(result.text);
+        form.current.reset();
+        alert("Message Envoyé");
+      },
+      (error) => {
+        console.log(error.text);
+        form.current.reset();
+        alert("Remplisser tous les champs");
+      }
+    );
+  };
+
   return (
     <>
       <section className="contact">
@@ -11,16 +35,13 @@ const Contact = () => {
         <p>
           <TypeAnimation
             sequence={[
-              `Vous voici arrivez à la fin de mon Portfolio. 
-
-                      Je serais ravi de mettre à profit mes compétences au service de votre projet ou au sein de votre entreprise.
-                      
+              `Vous voici arrivez à la fin de mon Portfolio.
+                      Je serais ravi de mettre à profit mes compétences au service de votre projet ou au sein de votre entreprise.                      
                        N’hésiter pas à me contacter si vous avez des questions.
                       Merci et à bientôt`,
             ]}
             wrapper="span"
             cursor={true}
-            repeat={Infinity}
             speed={40}
             style={{
               display: "inline-block",
@@ -28,7 +49,7 @@ const Contact = () => {
           />
         </p>
         <div className="form-container">
-          <form className="formulaire">
+          <form ref={form} onSubmit={sendEmail} className="form-flex">
             <div className="name">
               <label htmlFor="name">Nom</label>
               <input
@@ -55,7 +76,9 @@ const Contact = () => {
                 placeholder="Votre message..."
               ></textarea>
             </div>
-            <button>envoyer</button>
+            <div className="btn-submit">
+              <button className="submit">envoyer</button>
+            </div>
           </form>
         </div>
       </section>

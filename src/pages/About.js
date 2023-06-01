@@ -114,7 +114,7 @@ const About = () => {
             <div className="eyeem">
               <IconCamera color="#1B9C85" size={70} stroke={1} />
               <a target="_blank" href="">
-                Portfolio
+                Portfolio Photo
               </a>
             </div>
           </div>

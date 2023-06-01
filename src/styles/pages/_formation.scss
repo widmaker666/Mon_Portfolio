@@ -381,7 +381,9 @@ section.formation-container {
       "img2 techno techno techno";
     text-align: center;
     position: relative;
-    background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%,  rgba(85,88,218,1) 0%, rgba(95,209,249,1) 100.2% );
+    background-color: #d1d1d1;
+    background-image: linear-gradient(33deg, #d1d1d1 0%, #364989 32%, #10162f 100%);
+    
 
     & .title-mid {
       grid-area: title;
@@ -739,13 +741,12 @@ section.formation-container {
     background: $color-div;
     border: 3px solid black;
     border-right: none;
-    border-left: none;    
+    border-left: none;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     text-align: center;
-    
 
     & h1 {
       text-transform: uppercase;
@@ -781,10 +782,14 @@ section.formation-container {
       "logo techno techno techno";
     text-align: center;
     position: relative;
-    background-color: #FAD961;
-background-image: linear-gradient(0deg, #FAD961 0%, #F76B1C 33%, #000000 66%, #000000 100%);
-    
-    
+    background-color: #fad961;
+    background-image: linear-gradient(
+      0deg,
+      #fad961 0%,
+      #f76b1c 33%,
+      #000000 66%,
+      #000000 100%
+    );
 
     & .title-mid {
       grid-area: title;

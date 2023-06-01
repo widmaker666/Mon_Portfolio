@@ -1,5 +1,4 @@
 //* Page MSC //
-
 .msc-carousel {
   height: 100vh;
   background: url("../../assets/images/marbre.webp") center/cover;
@@ -28,7 +27,6 @@
           width: 100%;
           height: 100%;
           z-index: 1;
-          transition: 0.5s;
 
           &:hover {
             cursor: pointer;
@@ -53,7 +51,6 @@
           bottom: 0%;
           width: 100%;
           height: 100%;
-          transition: 0.5s;
 
           &:hover {
             cursor: pointer;
@@ -79,7 +76,6 @@
           width: 100%;
           height: 100%;
           z-index: -1;
-          transition: 0.8s;
 
           &:hover {
             cursor: pointer;
@@ -96,7 +92,7 @@
     & .switch-right {
       position: absolute;
       border: none;
-      background: none;      
+      background: none;
       transition: 0.5s;
       right: 15%;
       color: black;
@@ -113,9 +109,9 @@
       color: black;
       display: none;
       border: none;
-      background: none;      
+      background: none;
       transition: 0.5s;
-      
+
       &:hover {
         cursor: pointer;
         transform: scale(1.2);
@@ -155,7 +151,6 @@
           width: 100%;
           height: 100%;
           z-index: 1;
-          transition: 0.5s;
 
           &:hover {
             cursor: pointer;
@@ -180,7 +175,6 @@
           bottom: 0%;
           width: 100%;
           height: 100%;
-          transition: 0.5s;
 
           &:hover {
             cursor: pointer;
@@ -206,7 +200,6 @@
           width: 100%;
           height: 100%;
           z-index: -1;
-          transition: 0.8s;
 
           &:hover {
             cursor: pointer;
@@ -274,7 +267,6 @@
           width: 100%;
           height: 100%;
           z-index: 1;
-          transition: 0.5s;
 
           &:hover {
             cursor: pointer;
@@ -299,7 +291,6 @@
           bottom: 0%;
           width: 100%;
           height: 100%;
-          transition: 0.5s;
 
           &:hover {
             cursor: pointer;
@@ -325,7 +316,6 @@
           width: 100%;
           height: 100%;
           z-index: -1;
-          transition: 0.8s;
 
           &:hover {
             cursor: pointer;

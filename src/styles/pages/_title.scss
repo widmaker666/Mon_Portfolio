@@ -1,14 +1,27 @@
 header {
   position: relative;
   width: 100%;
-  height: 100vh;  
+  height: 100vh;
+  transition: 1s;
+  animation: headerOpacity 1.5s linear forwards;
+
+  @keyframes headerOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+    
+  }
+  
 
   & h1 {
     font-family: $font-title;
     font-weight: 100;
     font-size: 6rem;
     text-shadow: -6px 4px 7px rgba(0, 0, 0, 0.33);
-    margin: 5px 0 0 10px;
+    margin: 0px 0 0 10px;
     width: 40vw;
     transition: all 0.5s;
     animation: move-title 15s infinite linear;
