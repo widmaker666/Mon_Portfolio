@@ -1,0 +1,22 @@
+.contact {
+  height: 100vh;
+
+  & h1 {
+    text-transform: uppercase;
+    font-family: $font-title;
+    font-size: 60px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  & p {   
+    margin: 20px auto;
+    width: 612px;
+    height: 191px;
+    font-family: $font-paragraph-light;
+    text-align: center;
+    font-size: 22px;
+    line-height: 27px;
+    
+  }
+}

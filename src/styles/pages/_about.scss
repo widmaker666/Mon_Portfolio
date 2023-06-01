@@ -50,13 +50,13 @@ section.container-about {
           height: 578px;
           display: flex;
           flex-direction: column;
-          padding: 20px;
+          padding: 30px;
           margin-bottom: 50px;
-          background: $color-div;
+          background: $color-div;          
           border: 3px solid black;
           border-radius: 20px;
           box-shadow: 13px 16px 4px #000000;
-          animation: slide-right 2s linear 0s 1 normal forwards;
+          animation: slide-right 2s linear 0s 1 normal forwards;          
 
           @keyframes slide-right {
             0% {
@@ -70,7 +70,7 @@ section.container-about {
             }
           }
           & p {
-            margin-top: 50px;
+            margin: 30px auto;
             font-size: 1.2rem;
             font-family: $font-paragraph-light;
             letter-spacing: 2px;
@@ -88,6 +88,7 @@ section.container-about {
         -webkit-box-shadow: -6px -6px 8px 1px rgba(0, 0, 0, 0.83);
         -moz-box-shadow: -6px -6px 8px 1px rgba(0, 0, 0, 0.83);
         animation: slide-left 2.5s linear 0s 1 normal forwards;
+        
 
         @keyframes slide-left {
           0% {
@@ -375,6 +376,7 @@ section.container-about {
             background-clip: text;
             color: transparent;
             transition: 0.5s ease;
+            transform: scale(1.15);
           }
         }
       }
@@ -405,6 +407,7 @@ section.container-about {
             background-clip: text;
             color: transparent;
             transition: 0.5s ease;
+            transform: scale(1.15);
           }
         }
       }
@@ -438,6 +441,7 @@ section.container-about {
             background-clip: text;
             color: transparent;
             transition: 0.5s ease;
+            transform: scale(1.15);
           }
         }
       }

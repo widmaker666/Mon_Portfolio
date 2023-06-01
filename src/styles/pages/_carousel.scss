@@ -95,8 +95,12 @@
     }
     & .switch-right {
       position: absolute;
+      border: none;
+      background: none;      
+      transition: 0.5s;
       right: 15%;
       color: black;
+
       &:hover {
         cursor: pointer;
         transform: scale(1.2);
@@ -108,6 +112,10 @@
       left: 15%;
       color: black;
       display: none;
+      border: none;
+      background: none;      
+      transition: 0.5s;
+      
       &:hover {
         cursor: pointer;
         transform: scale(1.2);

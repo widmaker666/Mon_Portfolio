@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 //-Site MSC img //
 import mscWeb from "../assets/images/museum.webp";
 import wallpaperMsc from "../assets/images/marbre.webp";
@@ -22,7 +22,6 @@ const Carousel = () => {
   const handleClickCarouselRight = () => {
     const addCount = count + 1;
     setCount(count >= projects ? 1 : addCount);
-    console.log(count);
     switch (count) {
       case 1:
         //! Old skool //
@@ -31,7 +30,7 @@ const Carousel = () => {
         document.querySelector(".switch-left").style.display = "block";
         document.querySelector(".old-carousel").style.background =
           "linear-gradient(0deg, #10162F 63%, #f0f0f0 100%)";
-          document.querySelector(".switch-left").style.display = "none";
+        document.querySelector(".switch-left").style.display = "none";
         break;
       case 2:
         //! Old skool //
