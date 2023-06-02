@@ -151,13 +151,13 @@ section.formation-container {
           text-decoration: none;
           font-weight: 100;
           transition: 0.8s;
-          animation: colors 10s infinite alternate forwards;
+          animation: colors1 10s infinite alternate forwards;
           transition: all 0.8s;
         }
-        @keyframes colors {
+        @keyframes colors1 {
           0% {
             transform: translateX(0);
-            color: #cfbaf0;
+            color: #e76f51;
           }
           10% {
             transform: translateX(-10px);
@@ -169,7 +169,7 @@ section.formation-container {
 
           30% {
             transform: translateX(-10px);
-            color: #8eecf5;
+            color: #f4a261;
           }
           40% {
             transform: translateX(10px);
@@ -179,7 +179,7 @@ section.formation-container {
             transform: translateX(-10px);
           }
           60% {
-            color: #b9fbc0;
+            color: #e9c46a;
             transform: translate(10px);
           }
           70% {
@@ -187,7 +187,7 @@ section.formation-container {
           }
 
           80% {
-            color: #f27059;
+            color: #2a9d8f;
             transform: translate(8px);
           }
           90% {
@@ -195,7 +195,7 @@ section.formation-container {
           }
 
           100% {
-            color: #ca7df9;
+            color: #264653;
             transform: translateX(0);
           }
         }
@@ -222,12 +222,12 @@ section.formation-container {
           text-decoration: none;
           font-weight: 100;
           transition: 0.8s;
-          animation: colors 10s infinite alternate forwards;
+          animation: colors2 10s infinite alternate forwards;
           transition: all 0.8s;
         }
-        @keyframes colors {
+        @keyframes colors2 {
           0% {
-            color: #cfbaf0;
+            color: #47ead0;
             transform: translate(0);
           }
           10% {
@@ -239,7 +239,7 @@ section.formation-container {
           }
 
           30% {
-            color: #8eecf5;
+            color: #fcfe19;
             transform: translate(-2px, 2px);
           }
           40% {
@@ -250,7 +250,7 @@ section.formation-container {
             transform: translate(-2px, -2px);
           }
           60% {
-            color: #b9fbc0;
+            color: #fe277e;
             transform: translate(2px, -2px);
           }
           70% {
@@ -258,7 +258,7 @@ section.formation-container {
           }
 
           80% {
-            color: #f27059;
+            color: #0c0f0a;
             transform: translate(-2px, -2px);
           }
           90% {
@@ -266,7 +266,7 @@ section.formation-container {
           }
 
           100% {
-            color: #ca7df9;
+            color: #27c7d4;
             transform: translate(0);
           }
         }
@@ -530,54 +530,9 @@ section.formation-container {
           text-decoration: none;
           font-weight: 100;
           transition: 0.8s;
-          animation: colors 10s infinite alternate forwards;
+          animation: colors1 10s infinite alternate forwards;
           transition: all 0.8s;
-        }
-        @keyframes colors {
-          0% {
-            transform: translateX(0);
-            color: #cfbaf0;
-          }
-          10% {
-            transform: translateX(-10px);
-          }
-
-          20% {
-            transform: translateX(10px);
-          }
-
-          30% {
-            transform: translateX(-10px);
-            color: #8eecf5;
-          }
-          40% {
-            transform: translateX(10px);
-          }
-
-          50% {
-            transform: translateX(-10px);
-          }
-          60% {
-            color: #b9fbc0;
-            transform: translate(10px);
-          }
-          70% {
-            transform: translateX(-10px);
-          }
-
-          80% {
-            color: #f27059;
-            transform: translate(8px);
-          }
-          90% {
-            transform: translate(-8px);
-          }
-
-          100% {
-            color: #ca7df9;
-            transform: translateX(0);
-          }
-        }
+        }        
 
         & a:visited {
           text-decoration: none;
@@ -601,54 +556,10 @@ section.formation-container {
           text-decoration: none;
           font-weight: 100;
           transition: 0.8s;
-          animation: colors 10s infinite alternate forwards;
+          animation: colors2 10s infinite alternate forwards;
           transition: all 0.8s;
         }
-        @keyframes colors {
-          0% {
-            color: #cfbaf0;
-            transform: translate(0);
-          }
-          10% {
-            transform: translate(-10px, -10px);
-          }
-
-          20% {
-            transform: translate(2px, -2px);
-          }
-
-          30% {
-            color: #8eecf5;
-            transform: translate(-2px, 2px);
-          }
-          40% {
-            transform: translate(2px, 2px);
-          }
-
-          50% {
-            transform: translate(-2px, -2px);
-          }
-          60% {
-            color: #b9fbc0;
-            transform: translate(2px, -2px);
-          }
-          70% {
-            transform: translate(-2px, 2px);
-          }
-
-          80% {
-            color: #f27059;
-            transform: translate(-2px, -2px);
-          }
-          90% {
-            transform: translate(2px, -2px);
-          }
-
-          100% {
-            color: #ca7df9;
-            transform: translate(0);
-          }
-        }
+        
 
         & a:visited {
           text-decoration: none;
@@ -876,7 +787,7 @@ section.formation-container {
         @keyframes colors {
           0% {
             transform: translateX(0);
-            color: #cfbaf0;
+            color: #5b1cc1;
           }
           10% {
             transform: translateX(-10px);
@@ -888,7 +799,7 @@ section.formation-container {
 
           30% {
             transform: translateX(-10px);
-            color: #8eecf5;
+            color: #1a9fab;
           }
           40% {
             transform: translateX(10px);
@@ -898,7 +809,7 @@ section.formation-container {
             transform: translateX(-10px);
           }
           60% {
-            color: #b9fbc0;
+            color: #32be40;
             transform: translate(10px);
           }
           70% {
@@ -906,7 +817,7 @@ section.formation-container {
           }
 
           80% {
-            color: #f27059;
+            color: #ad5141;
             transform: translate(8px);
           }
           90% {
@@ -914,7 +825,7 @@ section.formation-container {
           }
 
           100% {
-            color: #ca7df9;
+            color: #393caa;
             transform: translateX(0);
           }
         }
@@ -941,54 +852,10 @@ section.formation-container {
           text-decoration: none;
           font-weight: 100;
           transition: 0.8s;
-          animation: colors 10s infinite alternate forwards;
+          animation: colors2 10s infinite alternate forwards;
           transition: all 0.8s;
         }
-        @keyframes colors {
-          0% {
-            color: #cfbaf0;
-            transform: translate(0);
-          }
-          10% {
-            transform: translate(-10px, -10px);
-          }
-
-          20% {
-            transform: translate(2px, -2px);
-          }
-
-          30% {
-            color: #8eecf5;
-            transform: translate(-2px, 2px);
-          }
-          40% {
-            transform: translate(2px, 2px);
-          }
-
-          50% {
-            transform: translate(-2px, -2px);
-          }
-          60% {
-            color: #b9fbc0;
-            transform: translate(2px, -2px);
-          }
-          70% {
-            transform: translate(-2px, 2px);
-          }
-
-          80% {
-            color: #f27059;
-            transform: translate(-2px, -2px);
-          }
-          90% {
-            transform: translate(2px, -2px);
-          }
-
-          100% {
-            color: #ca7df9;
-            transform: translate(0);
-          }
-        }
+        
 
         & a:visited {
           text-decoration: none;

@@ -17,7 +17,7 @@
 }
 
 @font-face {
-  font-family: game;
+  font-family: "game";
   src: url("../assets/fonts/PressStart2P-Regular.ttf");
 }
 
@@ -28,9 +28,7 @@ $font-paragraph-light: "paragraph-light";
 $font-msc: "italiana";
 $font-game: "game";
 
-:export {
-font-family: $font-game;
-}
+
 
 //* Colors //
 $color-btn: #97ffae;

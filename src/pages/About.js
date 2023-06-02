@@ -20,8 +20,8 @@ import BannerProf from "../components/BannerProf";
 import Footer from "../components/Footer";
 
 const About = () => {
-
-
+ 
+  
 
   return (
     <>
@@ -41,55 +41,19 @@ const About = () => {
               </div>
               <div className="text-p">
                 <p className="p1">
-                  <TypeAnimation
-                    sequence={[
-                      `- Photographe professionnel passionné avec un style 90's très
-                    old school comme on dit ! Grâce à la photo je developpe beaucoup
-                    le côté relationnel car rien de mieux que quelqu'un qui comprend
-                    et qui sait répondre aux attentes et problématiques que les
-                    clients lui posent.`,
-                    ]}
-                    wrapper="span"
-                    cursor={true}
-                    speed={70}
-                    style={{
-                      fontSize: "1em",
-                      fontFamily: "$font-paragraph-light",
-                      display: "inline-block",
-                    }}
-                  />
+                  - Photographe professionnel passionné avec un style 90's très
+                  old school comme on dit ! Grâce à la photo je developpe
+                  beaucoup le côté relationnel car rien de mieux que quelqu'un
+                  qui comprend et qui sait répondre aux attentes et
+                  problématiques que les clients lui posent.
                 </p>
                 <p className="p2">
-                  <TypeAnimation
-                    sequence={[
-                      `- La photo n'est que le résultat de l'appareil mais le plus
-                    intéressant c'est de savoir comment arriver au resultat que l'on
-                    visualise avec la technologie.`,
-                    ]}
-                    wrapper="span"
-                    cursor={true}
-                    speed={70}
-                    style={{
-                      fontSize: "1em",
-                      fontFamily: "$font-paragraph-light",
-                      display: "inline-block",
-                    }}
-                  />
+                  - La photo n'est que le résultat de l'appareil mais le plus
+                  intéressant c'est de savoir comment arriver au resultat que
+                  l'on visualise avec la technologie.
                 </p>
                 <p className="p3">
-                  <TypeAnimation
-                    sequence={[
-                      `- Je travail avec adobe Ligthroom classic et photoshop.`,
-                    ]}
-                    wrapper="span"
-                    cursor={true}
-                    speed={70}
-                    style={{
-                      fontSize: "1em",
-                      fontFamily: "$font-paragraph-light",
-                      display: "inline-block",
-                    }}
-                  />
+                  - Je travail avec adobe Ligthroom classic et photoshop.
                 </p>
               </div>
             </div>
@@ -124,8 +88,8 @@ const About = () => {
           <div className="title-music">
             <h1>MUSICIEN AUTEUR / COMPOSITEUR (2011 - NOW)</h1>
           </div>
-          <img src={imgPhoto} alt="" />
-          <div className="description-music">
+          <img className="" src={imgPhoto} alt="" />
+          <div className="description-music ">
             <ul id="ul1">
               <li>
                 Fondateur des groupes "the dirty fingernails" et "the flying
@@ -185,7 +149,7 @@ const About = () => {
         <div className="formation-guitar">
           <h1>PROFESSEUR DE GUITARE (2007 - NOW)</h1>
           <div className="container-text-photo">
-            <div className="description-guitar">
+            <div className="description-guitar ">
               <p>
                 Professeur de guitare depuis de nombreuses années. J'aime
                 transmettre mes connaissances aux autres et je suis toujours
@@ -196,13 +160,13 @@ const About = () => {
                 les aider à apprendre.
               </p>
             </div>
-            <img src={photoGuitar} alt="" />
+            <img className="" src={photoGuitar} alt="" />
           </div>
         </div>
         <BannerProf />
         <div className="formation-vert">
           <h1>ouvrier espace verts (2009/2010/2016/2017)</h1>
-          <div className="description-vert">
+          <div className="description-vert ">
             <p>
               A travailler pour l’AESE feyzin et la mairie de feyzin au cours de
               plusieurs contrat en CDI et CDD Ouvrier paysagiste et voirie.
@@ -219,19 +183,19 @@ const About = () => {
           <div className="jdr">
             <div className="text1">
               <h1>jeux de société et jdr</h1>
-              <div className="description">
+              <div className="description ">
                 <p>
                   Warhammer / Cthulhu / D&D / Heroquest / Dungeon Saga / ....
                 </p>
               </div>
             </div>
-            <img src={cthulhu} alt="" />
+            <img className="" src={cthulhu} alt="" />
           </div>
           <div className="amnesia">
-            <img src={amnesia} alt="" />
+            <img className="" src={amnesia} alt="" />
             <div className="text2">
               <h1>Jeux videos / Amnesia the dark descent</h1>
-              <div className="description">
+              <div className="description ">
                 <p>
                   Création de custom stories sur Amnesia : Utilisation de
                   Notepad ++ pour écrire des scripts qui font sens avec le
@@ -243,7 +207,7 @@ const About = () => {
           <div className="movies">
             <div className="text3">
               <h1>Cinema et art d’horreur / s.f</h1>
-              <div className="description">
+              <div className="description ">
                 <p>
                   Intérêt pour tout l’art et le cinéma avec des artistes : King,
                   Carpenter, Ridley Scott, Kubrick, Dali, Giger, Beksinski,
@@ -251,7 +215,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <img src={king} alt="" />
+            <img className="" src={king} alt="" />
           </div>
         </div>
       </section>
