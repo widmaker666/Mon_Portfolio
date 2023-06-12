@@ -43,98 +43,38 @@ const Home = () => {
           <div className="text-container-header" id="container">
             <div>
               <p id="text1">
-                <TypeAnimation
-                  sequence={[
-                    `Moi c’est Alexandre, nouveau depuis peu dans le monde du
-                    développement web.`,
-                  ]}
-                  wrapper="span"
-                  cursor={true}
-                  speed={60}
-                  style={{
-                    fontSize: "1em",
-                    fontFamily: "$font-paragraph-light",
-                    display: "inline-block",
-                  }}
-                />
+                Moi c’est Alexandre, nouveau depuis peu dans le monde du
+                développement web.
               </p>
             </div>
             <div id="text2">
               <p>
-                <TypeAnimation
-                  sequence={[
-                    ` Formé par The Hacking Project avec plus de 1200h et le RNCP5
-                    (Dev Web), plus un stage de 2 mois en entreprise pour Miss
-                    Camille, créatrice de bijoux.`,
-                  ]}
-                  wrapper="span"
-                  cursor={true}
-                  speed={60}
-                  style={{
-                    fontSize: "1em",
-                    fontFamily: "$font-paragraph-light",
-                    display: "inline-block",
-                  }}
-                />
+                Formé par The Hacking Project avec plus de 1200h et le RNCP5
+                (Dev Web), plus un stage de 2 mois en entreprise pour Miss
+                Camille, créatrice de bijoux.
               </p>
             </div>
             <div id="text3">
               <p>
-                <TypeAnimation
-                  sequence={[
-                    `Je veux me faire une place rapidement pour vous donner un aperçu
-                    de qui je suis. Je n’ai peux être pour l’instant pas beaucoup de
-                    choses à vous montrer mais ces choses existent pourtant et je
-                    compte bien continuer à abreuver ma soif de connaissance dans ce
-                    milieu qui me plaît de plus en plus à mesure que j’avance et que
-                    je code.`,
-                  ]}
-                  wrapper="span"
-                  cursor={true}
-                  speed={60}
-                  style={{
-                    fontSize: "1em",
-                    fontFamily: "$font-paragraph-light",
-                    display: "inline-block",
-                  }}
-                />
+                Je veux me faire une place rapidement pour vous donner un aperçu
+                de qui je suis. Je n’ai peux être pour l’instant pas beaucoup de
+                choses à vous montrer mais ces choses existent pourtant et je
+                compte bien continuer à abreuver ma soif de connaissance dans ce
+                milieu qui me plaît de plus en plus à mesure que j’avance et que
+                je code.
               </p>
             </div>
             <div id="text4">
               <p>
-                <TypeAnimation
-                  sequence={[
-                    `J’adore travailler en équipe car on ne peut que progresser grâce
-                    aux autres. Mon but serait de pouvoir prendre les commandes
-                    d’une équipe et devenir lead Dev d’un projet pour partager mes
-                    connaissances et mener à bien le projet ensemble.`,
-                  ]}
-                  wrapper="span"
-                  cursor={true}
-                  speed={60}
-                  style={{
-                    fontSize: "1em",
-                    fontFamily: "$font-paragraph-light",
-                    display: "inline-block",
-                  }}
-                />
+                J’adore travailler en équipe car on ne peut que progresser grâce
+                aux autres. Mon but serait de pouvoir prendre les commandes
+                d’une équipe et devenir lead Dev d’un projet pour partager mes
+                connaissances et mener à bien le projet ensemble.
               </p>
             </div>
             <div id="text5">
               <p>
-                <TypeAnimation
-                  sequence={[
-                    `Les technologies sur lesquelles j’ai travaillé sont : `,
-                  ]}
-                  wrapper="span"
-                  cursor={true}
-                  speed={60}
-                  style={{
-                    fontSize: "1em",
-                    fontFamily: "$font-paragraph-light",
-                    display: "inline-block",
-                  }}
-                />
+                Les technologies sur lesquelles j’ai travaillé sont :
                 <strong>
                   Ruby et Rails, Html, CSS, SASS, Javascript, ReactJS.
                 </strong>{" "}
@@ -142,19 +82,8 @@ const Home = () => {
             </div>
             <div id="text6">
               <p>
-                <TypeAnimation
-                  sequence={[`Mais j’aimerais me tourner vraiment sur : `]}
-                  wrapper="span"
-                  cursor={true}
-                  speed={60}
-                  style={{
-                    fontSize: "1em",
-                    fontFamily: "$font-paragraph-light",
-                    display: "inline-block",
-                  }}
-                />
-
-                <strong>JAVASCRIPT/REACT/NEXT/EXPRESS/VUE/PYTHON</strong>
+                Mais je veux vraiment me spécialiser sur :
+                <strong>JAVASCRIPT/REACT/NodeJS/HTML/SASS</strong>
               </p>
             </div>
           </div>

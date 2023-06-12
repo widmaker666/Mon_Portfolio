@@ -3,7 +3,7 @@ header {
   width: 100%;
   height: 100vh;
   transition: 1s;
-  animation: headerOpacity 1.5s linear forwards;
+  animation: headerOpacity 3.5s linear forwards;
 
   @keyframes headerOpacity {
     0% {
@@ -12,9 +12,7 @@ header {
     100% {
       opacity: 1;
     }
-    
   }
-  
 
   & h1 {
     font-family: $font-title;
@@ -24,7 +22,7 @@ header {
     margin: 0px 0 0 10px;
     width: 40vw;
     transition: all 0.5s;
-    animation: move-title 15s infinite linear;
+    animation: move-title 10s infinite linear;
   }
 
   @keyframes move-title {
@@ -262,7 +260,7 @@ header {
     right: 50%;
   }
   & .arrow-down:hover {
-    cursor: pointer;    
+    cursor: pointer;
     animation: arrow-down 1s ease infinite forwards;
   }
   @keyframes arrow-down {

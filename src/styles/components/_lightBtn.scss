@@ -9,6 +9,7 @@
   width: 200px;
   height: 40px;
   z-index: 1;
+  animation: headerOpacity 3.5s forwards linear;
 
   & span {
     font-family: $font-paragraph-light;

@@ -49,7 +49,7 @@ section.formation-container {
       "logo techno techno techno";
     text-align: center;
     position: relative;
-    background-image: linear-gradient(135deg, #92ffc0 10%, #002661 100%);
+    background: url("../../assets/images/marbre.webp") center/cover no-repeat;
 
     & .title-mid {
       grid-area: title;
@@ -382,8 +382,12 @@ section.formation-container {
     text-align: center;
     position: relative;
     background-color: #d1d1d1;
-    background-image: linear-gradient(33deg, #d1d1d1 0%, #364989 32%, #10162f 100%);
-    
+    background-image: linear-gradient(
+      33deg,
+      #d1d1d1 0%,
+      #364989 32%,
+      #10162f 100%
+    );
 
     & .title-mid {
       grid-area: title;
@@ -532,7 +536,7 @@ section.formation-container {
           transition: 0.8s;
           animation: colors1 10s infinite alternate forwards;
           transition: all 0.8s;
-        }        
+        }
 
         & a:visited {
           text-decoration: none;
@@ -559,7 +563,6 @@ section.formation-container {
           animation: colors2 10s infinite alternate forwards;
           transition: all 0.8s;
         }
-        
 
         & a:visited {
           text-decoration: none;
@@ -855,7 +858,6 @@ section.formation-container {
           animation: colors2 10s infinite alternate forwards;
           transition: all 0.8s;
         }
-        
 
         & a:visited {
           text-decoration: none;
