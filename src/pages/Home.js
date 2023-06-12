@@ -27,7 +27,6 @@ const Home = () => {
 
   return (
     <>
-      <LightBtn />
       <Title />
       <section className="home" id="home">
         <Navbar />
