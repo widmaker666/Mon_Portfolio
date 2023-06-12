@@ -399,7 +399,7 @@ header {
 
 //- tablette 481px — 768px //
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   header {
     position: relative;
     width: 100%;
@@ -427,98 +427,102 @@ header {
       animation: move-title 10s infinite linear;
     }
 
-    & .links-container {
-      & .links {
-        display: flex;
-        justify-content: center;
-        margin: 55px auto;
+    .all-container {
 
-        & li {
-          margin: 0 40px;
-          & a {
-            color: #001219;
-            & svg {
-              width: 45px;
-              height: 45px;
+      margin-top: 30%;
+      & .links-container {
+        & .links {
+          display: flex;
+          justify-content: center;
+          margin: 55px auto;
+
+          & li {
+            margin: 0 40px;
+            & a {
+              color: #001219;
+              & svg {
+                width: 45px;
+                height: 45px;
+              }
+            }
+            & a:visited,
+            a:active {
+              color: black;
+            }
+            & #social1:hover {
+              color: black;
+            }
+            & #social2:hover {
+              color: black;
+            }
+            & #social3:hover {
+              color: black;
             }
           }
-          & a:visited,
-          a:active {
-            color: black;
-          }
-          & #social1:hover {
-            color: black;
-          }
-          & #social2:hover {
-            color: black;
-          }
-          & #social3:hover {
-            color: black;
-          }
-        }
 
-        & li:first-child:hover {
-          cursor: none;
-          animation: none;
-        }
-        & li:nth-child(2):hover {
-          cursor: none;
-          animation: none;
-        }
-        & li:last-child:hover {
-          cursor: none;
-          animation: none;
+          & li:first-child:hover {
+            cursor: none;
+            animation: none;
+          }
+          & li:nth-child(2):hover {
+            cursor: none;
+            animation: none;
+          }
+          & li:last-child:hover {
+            cursor: none;
+            animation: none;
+          }
         }
       }
-    }
 
-    & .name {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      line-height: 60px;
-
-      & .name-container {
-        font-family: $font-title;
-        font-size: 1.6rem;
-        font-weight: 100;
-        letter-spacing: 8px;
-        text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.39);
-        padding: 25px;
-        text-decoration: underline;
-        text-underline-offset: 8px;
-      }
-      & .work-container {
-        font-family: $font-paragraph-light;
-        font-size: 20px;
-        letter-spacing: 10px;
-        margin: 6px;
+      & .name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-        width: 93vh;
-        text-decoration: underline;
-        text-underline-offset: 8px;
-      }
-    }
-    & .quote-container {
-      display: flex;
-      padding: 0;
-      padding: 0 20px;
+        line-height: 60px;
 
-      & .quote {
-        text-align: end;
-        width: 990px;
-        height: 100px;
-        background: $color-div;
-        border: 3px solid black;
-        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        & .name-container {
+          font-family: $font-title;
+          font-size: 1.6rem;
+          font-weight: 100;
+          letter-spacing: 8px;
+          text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.39);
+          padding: 25px;
+          text-decoration: underline;
+          text-underline-offset: 8px;
+        }
+        & .work-container {
+          font-family: $font-paragraph-light;
+          font-size: 20px;
+          letter-spacing: 10px;
+          margin: 6px;
+          text-align: center;
+          width: 93vh;
+          text-decoration: underline;
+          text-underline-offset: 8px;
+        }
       }
-      & .description {
-        padding: 20px;
-        font-size: 13px;
+      & .quote-container {
+        display: flex;
+        padding: 0;
+        padding: 0 20px;
+
+        & .quote {
+          text-align: end;
+          width: 990px;
+          height: 100px;
+          background: $color-div;
+          border: 3px solid black;
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+        & .description {
+          padding: 20px;
+          font-size: 13px;
+        }
       }
     }
     & .arrow-down {
