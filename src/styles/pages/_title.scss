@@ -562,104 +562,107 @@ header {
       transition: all 0.5s;
       animation: move-title 10s infinite linear;
     }
+    .all-container {
+      margin-top: 100px;
 
-    & .links-container {
-      & .links {
-        display: flex;
-        justify-content: center;
-        margin: 18px auto;
+      & .links-container {
+        & .links {
+          display: flex;
+          justify-content: center;
+          margin: 18px auto;
 
-        & li {
-          margin: 0 20px;
-          & a {
-            color: #001219;
-            & svg {
-              width: 35px;
-              height: 35px;
+          & li {
+            margin: 0 20px;
+            & a {
+              color: #001219;
+              & svg {
+                width: 35px;
+                height: 35px;
+              }
+            }
+            & a:visited,
+            a:active {
+              color: black;
+            }
+            & #social1:hover {
+              color: black;
+            }
+            & #social2:hover {
+              color: black;
+            }
+            & #social3:hover {
+              color: black;
             }
           }
-          & a:visited,
-          a:active {
-            color: black;
-          }
-          & #social1:hover {
-            color: black;
-          }
-          & #social2:hover {
-            color: black;
-          }
-          & #social3:hover {
-            color: black;
-          }
-        }
 
-        & li:first-child:hover {
-          cursor: none;
-          animation: none;
-        }
-        & li:nth-child(2):hover {
-          cursor: none;
-          animation: none;
-        }
-        & li:last-child:hover {
-          cursor: none;
-          animation: none;
+          & li:first-child:hover {
+            cursor: none;
+            animation: none;
+          }
+          & li:nth-child(2):hover {
+            cursor: none;
+            animation: none;
+          }
+          & li:last-child:hover {
+            cursor: none;
+            animation: none;
+          }
         }
       }
-    }
 
-    & .name {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      line-height: 40px;
-      margin: 10px;
-
-      & .name-container {
-        font-family: $font-title;
-        font-size: 1rem;
-        font-weight: 100;
-        letter-spacing: 8px;
-        text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.39);
-        padding: 5px;
-        text-decoration: underline;
-        text-underline-offset: 8px;
-      }
-      & .work-container {
-        font-family: $font-paragraph-light;
-        font-size: 13px;
-        letter-spacing: 5px;
-        margin: 6px;
+      & .name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-        width: 93vh;
-        text-decoration: underline;
-        text-underline-offset: 8px;
-      }
-    }
-    & .quote-container {
-      padding: 0;
-      padding: 0 20px;
+        line-height: 40px;
+        margin: 10px;
 
-      & .quote {
-        text-align: end;
-        width: 990px;
-        height: 100px;
-        background: $color-div;
-        border: 3px solid black;
-        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        & .name-container {
+          font-family: $font-title;
+          font-size: 1rem;
+          font-weight: 100;
+          letter-spacing: 8px;
+          text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.39);
+          padding: 5px;
+          text-decoration: underline;
+          text-underline-offset: 8px;
+        }
+        & .work-container {
+          font-family: $font-paragraph-light;
+          font-size: 13px;
+          letter-spacing: 5px;
+          margin: 6px;
+          text-align: center;
+          width: 93vh;
+          text-decoration: underline;
+          text-underline-offset: 8px;
+        }
       }
-      & .description {
-        padding: 20px;
-        font-size: 11px;
+      & .quote-container {
+        padding: 0;
+        padding: 0 20px;
+
+        & .quote {
+          text-align: end;
+          width: 990px;
+          height: 80px;
+          background: $color-div;
+          border: 3px solid black;
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+        & .description {
+          padding: 20px;
+          font-size: 11px;
+        }
       }
     }
     & .arrow-down {
       position: absolute;
-      bottom: 5%;
+      bottom: 3%;
       right: 45%;
 
       & svg {
