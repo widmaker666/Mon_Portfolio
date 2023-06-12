@@ -11,10 +11,7 @@ const NavBarMsc = () => {
             <img src={Logo} alt="" />
           </a>
         </div>
-        <ul className="nav-msc">
-          <Link className="navlink-msc" to="/projects">
-            <li className="li-msc">Projets</li>
-          </Link>
+        <ul className="nav-msc">          
           <Link className="navlink-msc" to="/about">
             <li className="li-msc">A Propos</li>
           </Link>

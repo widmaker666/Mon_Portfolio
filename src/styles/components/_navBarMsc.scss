@@ -13,7 +13,8 @@
   & ul {
     display: flex;
     width: 50vw;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding-left: 200px;
     align-items: center;
 
     & .navlink-msc {
