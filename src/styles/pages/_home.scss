@@ -206,3 +206,256 @@ section#formation {
     }
   }
 }
+
+//* Mediascreen //
+
+//- Grand Ecran pc - TV (1440px et plus) //
+@media screen and (min-width: 1440px) and (max-width: 1640px) {
+  .home {
+    & .home-container {
+      & .text-container-header {
+        width: 800px;
+        height: 645px;
+        background: $color-div;
+        border: 3px solid black;
+        padding: 20px;
+        margin-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+        & p {
+          font-family: $font-paragraph-light;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+//- 1439px - 1201px Ecran Pc //
+@media screen and (min-width: 1201px) and (max-width: 1439px) {
+  .home {
+    min-height: 80vh;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    border: 3px solid black;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+  
+    & .home-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      & .text-container-header {
+        width: 900px;
+        height: 645px;
+        background: $color-div;
+        border: 3px solid black;
+        padding: 20px;
+        margin-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  
+        transform: translateX(-200%);
+        visibility: hidden;
+        opacity: 0;
+        transition: 1s ease-in-out;
+  
+        & #text1 {
+          visibility: hidden;
+          opacity: 0;
+          animation: text-left 0.5s ease 1s forwards;
+          transition: 0.5s ease;
+        }
+        @keyframes text-left {
+          0% {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateX(250%);
+          }
+          100% {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0%);
+          }
+        }
+        & #text2 {
+          opacity: 0;
+          animation: text-up 0.5s 7.5s forwards linear;
+          transition: 0.5s ease;
+        }
+        @keyframes text-up {
+          0% {
+            opacity: 0;
+            transform: translateY(50%);
+            transition: 0.5s;
+          }
+          50% {
+            opacity: 1;
+            transform: translateY(-20%);
+            transition: 0.5s;
+          }
+  
+          80% {
+            opacity: 1;
+            transform: translateY(30%);
+            transition: 0.5s;
+          }
+  
+          100% {
+            opacity: 1;
+            transform: translateY(0%);
+            transition: 0.5s;
+          }
+        }
+  
+        & #text3 {
+          opacity: 0;
+          transform: scale(0);
+          animation: scaleText 2s 9s forwards linear;
+          transition: 0.5s ease;
+        }
+        @keyframes scaleText {
+          0% {
+            opacity: 1;
+            transform: scale(0);
+          }
+  
+          50% {
+            opacity: 1;
+            transform: scale(1.05);
+          }
+  
+          80% {
+            opacity: 1;
+            transform: scale(0.9);
+          }
+          100% {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+  
+        & #text4 {
+          visibility: hidden;
+          opacity: 0;
+          transform: translateX(100vw);
+          transition: 0.5s ease;
+          animation: text-left 2s 11s forwards linear;
+        }
+  
+        & #text5 {
+          opacity: 0;
+          animation: text-up 2s 12s forwards linear;
+          transition: 0.5s ease;
+        }
+  
+        & #text6 {
+          opacity: 0;
+          transform: scale(0);
+          animation: scaleText 2s 13s forwards linear;
+          transition: 0.5s ease;
+        }
+  
+        & p {
+          font-family: $font-paragraph-light;
+          font-size: 16px;
+        }
+      }
+  
+      & .image-header {
+        width: 524px;
+        height: 685px;
+        transform: translateX(85%);
+  
+        & img {
+          width: 100%;
+          height: 100%;
+          border: 1px solid black;
+          transition: all 0.2s;
+          box-shadow: -7px 12px 5px 0px rgba(0, 0, 0, 0.75);
+          -webkit-box-shadow: -7px 12px 5px 0px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: -7px 12px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+        & img:hover {
+          cursor: pointer;
+          border: 5px solid black;
+          transform: scale(0.95);
+        }
+      }
+    }
+    & .arrow-down-home {
+      position: absolute;
+      bottom: 15px;
+      right: 50%;
+    }
+    & .arrow-down-home:hover {
+      cursor: pointer;
+      animation: arrow-down-home 1s infinite;
+      transform: translateY(-10%);
+      transition: 0.8s ease;
+    }
+    @keyframes arrow-down-home {
+      0% {
+        transform: translateY(-10%);
+      }
+      50% {
+        transform: translateY(10%);
+      }
+      100% {
+        transform: translateY(-10%);
+      }
+    }
+  }
+  
+  section#formation {
+    position: relative;
+  
+    & .arrow-up-home {
+      position: absolute;
+      bottom: 20px;
+      right: 50%;
+    }
+    & .arrow-up-home:hover {
+      cursor: pointer;
+      animation: arrow-up-home 1s infinite;
+      transform: translateY(-10%);
+      transition: 0.8s ease;
+    }
+    @keyframes arrow-up-home {
+      0% {
+        transform: translateY(-10%);
+      }
+      50% {
+        transform: translateY(10%);
+      }
+      100% {
+        transform: translateY(-10%);
+      }
+    }
+  }
+  
+}
+
+//- Petit ecran et pc 769px — 1024px //
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+//- tablette 481px — 768px //
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+//- Telephone 320px —480px //
