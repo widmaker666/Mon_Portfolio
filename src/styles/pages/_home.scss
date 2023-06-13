@@ -342,7 +342,7 @@ section#formation {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .home {
     & .home-container {
-      margin-top: 100px;
+      margin-top: 30px;
 
       & .text-container-header {
         width: 550px;
@@ -392,7 +392,7 @@ section#formation {
     }
     & .arrow-down-home {
       position: absolute;
-      bottom: 200px;
+      bottom: 20px;
       right: 50%;
     }
     & .arrow-down-home:hover {
