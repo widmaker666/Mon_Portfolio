@@ -340,7 +340,8 @@ section#formation {
 
 //- Petit ecran et pc 769px — 1024px //
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .home {
+  .home {  
+    
     & .home-container {
       margin-top: 30px;
 
@@ -419,7 +420,7 @@ section#formation {
 
     & .arrow-up-home {
       position: absolute;
-      bottom: 50px;
+      bottom: 0px;
       right: 50%;
     }
     & .arrow-up-home:hover {
