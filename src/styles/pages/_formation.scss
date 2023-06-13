@@ -949,3 +949,641 @@ section.formation-container {
     }
   }
 }
+
+//* MEDIA SCREEN //
+
+// Telephone 320px —480px //
+// tablette 481px — 768px //
+// Petit ecran et pc 769px — 1024px //
+// 1439px - 1201px Ecran Pc //
+// Grand Ecran pc - TV (1440px et plus) //
+
+//- 1439px - 1201px Ecran Pc //
+
+@media screen and (min-width: 1201px) and (max-width: 1439px) {
+  section.formation-container {
+    overflow-x: hidden;
+
+    & .title-container {
+      width: 100%;
+      height: 200px;
+      background: $color-div;
+      border: 3px solid black;
+      border-right: none;
+      border-left: none;
+
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      & h1 {
+        text-transform: uppercase;
+        font-family: $font-title;
+        font-size: 45px;
+        text-shadow: -5px 4px 7px rgba(0, 0, 0, 0.27);
+        letter-spacing: 10px;
+      }
+
+      & h2 {
+        text-transform: capitalize;
+        font-family: $font-paragraph-light;
+        font-weight: 100;
+        font-size: 30px;
+        letter-spacing: 10px;
+      }
+
+      & p {
+        font-family: $font-paragraph-reg;
+        font-weight: 1000;
+        font-size: 15px;
+        letter-spacing: 5px;
+      }
+    }
+    .msc {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas:
+        "title title title title"
+        "img1 prez prez prez"
+        "uses uses uses uses"
+        "logo techno techno techno";
+      text-align: center;
+      position: relative;
+      background: url("../../assets/images/marbre.webp") center/cover no-repeat;
+
+      & .paint-1 {
+        grid-area: img1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s ease-in-out;
+
+        & img {
+          width: 200px;
+          height: auto;
+          border: 8px solid black;
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+        &:hover {
+          cursor: none;
+          transform: scale(1.35) translateY(-20%);
+        }
+      }
+
+      & .paint-2 {
+        display: none;
+      }
+
+      & .utilities-container {
+        grid-area: uses;
+        display: flex;
+        text-align: left;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 50px;
+        margin: 20px;
+        width: 1190px;
+        height: 260px;
+        border: 3px solid black;
+        line-height: 35px;
+        background: $color-div;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+        & ul {
+          display: flex;
+          flex-direction: column;
+
+          & li {
+            font-family: $font-paragraph-reg;
+            font-size: 15px;
+            letter-spacing: 5px;
+            list-style-type: circle;
+          }
+        }
+      }
+
+      & .logo-msc {
+        grid-area: logo;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & img {
+          width: 200px;
+          height: auto;
+          border: 2px solid black;
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+      }
+      & .techno-container {
+        grid-area: techno;
+        width: 880px;
+        height: 115px;
+        background: $color-div;
+        border: 3px solid black;
+        margin: 100px auto;
+        padding-right: 50px;
+        line-height: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+        & h5 {
+          font-family: $font-paragraph-reg;
+          letter-spacing: 5px;
+          font-size: 19px;
+          font-weight: 1000;
+          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.43);
+        }
+        & p {
+          font-family: $font-paragraph-light;
+          letter-spacing: 2px;
+          font-size: 15px;
+          font-weight: 100;
+        }
+      }
+    }
+    & .msc::before {
+      content: "";
+      width: 100%;
+      height: 4px;
+      background: black;
+      position: absolute;
+      bottom: 0;
+    }
+
+    //* Second project oldskool //
+    .oldSkool {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas:
+        "title title title title"
+        "prez prez prez img1"
+        "uses uses uses uses"
+        "img2 techno techno techno";
+      text-align: center;
+      position: relative;
+      background-color: #d1d1d1;
+      background-image: linear-gradient(
+        33deg,
+        #d1d1d1 0%,
+        #364989 32%,
+        #10162f 100%
+      );
+
+      & .title-mid {
+        grid-area: title;
+        width: 1000px;
+        height: 100px;
+        background: $color-div;
+        border: 3px solid black;
+        margin: 50px auto;
+        display: flex;
+        align-items: center;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+        & h3 {
+          font-family: $font-paragraph-light;
+          font-weight: 100;
+          font-size: 30px;
+          letter-spacing: 5px;
+          color: $color-text;
+          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.43);
+
+          & span {
+            color: black;
+          }
+        }
+      }
+      & .gameboy {
+        grid-area: img1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        transition: 0.5s ease-in-out;
+        animation: myAnim 20s ease 0s infinite alternate forwards;
+
+        & img {
+          width: auto;
+          height: 200px;
+        }
+        @keyframes myAnim {
+          0%,
+          100% {
+            transform: translateY(0);
+          }
+
+          10%,
+          30%,
+          50%,
+          70% {
+            transform: translateY(-60px);
+          }
+
+          20%,
+          40%,
+          60% {
+            transform: translateY(-10px);
+          }
+
+          80% {
+            transform: translateY(20px);
+          }
+
+          90% {
+            transform: translateY(-20px);
+          }
+        }
+      }
+
+      & .ruy {
+        grid-area: img2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s ease-in-out;
+        animation: hadoken 8s ease infinite alternate forwards;
+
+        & img {
+          width: 190px;
+          height: auto;
+          border: 2px solid black;
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+        @keyframes hadoken {
+          0% {
+            transform: scale3d(1, 1, 1);
+          }
+
+          30% {
+            transform: scale3d(1.25, 0.75, 1);
+          }
+
+          40% {
+            transform: scale3d(0.75, 1.25, 1);
+          }
+
+          50% {
+            transform: scale3d(1.15, 0.85, 1);
+          }
+
+          65% {
+            transform: scale3d(0.95, 1.05, 1);
+          }
+
+          75% {
+            transform: scale3d(1.05, 0.95, 1);
+          }
+
+          100% {
+            transform: scale3d(1, 1, 1);
+          }
+        }
+      }
+      & .prez-container {
+        grid-area: prez;
+        width: 840px;
+        height: 260px;
+        background: $color-div;
+        border: 3px solid black;
+        display: flex;
+
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+        & p {
+          font-family: $font-paragraph-light;
+          font-size: 19px;
+          letter-spacing: 2px;
+          margin: 20px auto 30px auto;
+        }
+
+        & h5 {
+          font-family: $font-paragraph-light;
+          font-size: 19px;
+          letter-spacing: 2px;
+          margin: 10px auto 10px auto;
+
+          & a {
+            text-decoration: none;
+            font-weight: 100;
+            transition: 0.8s;
+            animation: colors1 10s infinite alternate forwards;
+            transition: all 0.8s;
+          }
+
+          & a:visited {
+            text-decoration: none;
+            color: black;
+          }
+          & a:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            color: $color-link;
+            transition: 0.5s;
+          }
+        }
+        & h6 {
+          font-family: $font-paragraph-light;
+          font-size: 19px;
+          letter-spacing: 2px;
+          margin: 10px auto 10px auto;
+
+          & a {
+            text-decoration: none;
+            font-weight: 100;
+            transition: 0.8s;
+            animation: colors2 10s infinite alternate forwards;
+            transition: all 0.8s;
+          }
+
+          & a:visited {
+            text-decoration: none;
+            color: black;
+          }
+          & a:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            color: $color-link;
+            transition: 0.5s;
+          }
+        }
+      }
+      & .utilities-container {
+        grid-area: uses;
+        display: flex;
+        text-align: left;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 50px;
+        margin: 20px 0 20px 90px;
+        width: 1090px;
+        height: 260px;
+        border: 3px solid black;
+        line-height: 30px;
+        background: $color-div;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+        & ul {
+          display: flex;
+          flex-direction: column;
+
+          & li {
+            font-family: $font-paragraph-reg;
+            font-size: 0.85rem;
+            letter-spacing: 5px;
+            list-style-type: circle;
+          }
+        }
+      }
+
+      & .techno-container {
+        grid-area: techno;
+        width: 880px;
+        height: 115px;
+        background: $color-div;
+        border: 3px solid black;
+        margin: 100px auto;
+        padding-right: 50px;
+        line-height: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+        & h5 {
+          font-family: $font-paragraph-reg;
+          letter-spacing: 5px;
+          font-size: 19px;
+          font-weight: 1000;
+          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.43);
+        }
+        & p {
+          font-family: $font-paragraph-light;
+          letter-spacing: 3px;
+          font-size: 13px;
+          font-weight: 100;
+        }
+      }
+    }
+    & .oldSkool::before {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: black;
+      position: absolute;
+      bottom: 0;
+    }
+
+    //* Third project miss camille //
+    & .miss-container {
+      width: 100%;
+      height: 200px;
+      background: $color-div;
+      border: 3px solid black;
+      border-right: none;
+      border-left: none;
+      padding: 10px;
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      & h1 {
+        text-transform: uppercase;
+        font-family: $font-title;
+        font-size: 33px;
+        text-shadow: -5px 4px 7px rgba(0, 0, 0, 0.27);
+        letter-spacing: 10px;
+      }
+
+      & h2 {
+        text-transform: capitalize;
+        font-family: $font-paragraph-light;
+        font-weight: 100;
+        font-size: 30px;
+        letter-spacing: 10px;
+      }
+
+      & p {
+        font-family: $font-paragraph-reg;
+        font-weight: 1000;
+        font-size: 15px;
+        letter-spacing: 5px;
+      }
+    }
+    .miss-camille {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas:
+        "title title title title"
+        "prez prez prez img1"
+        "uses uses uses uses"
+        "logo techno techno techno";
+      text-align: center;
+      justify-content: center;
+      position: relative;
+      background-color: #fad961;
+      background-image: linear-gradient(
+        0deg,
+        #fad961 0%,
+        #f76b1c 33%,
+        #000000 66%,
+        #000000 100%
+      );
+
+      & .title-mid {
+        grid-area: title;
+        width: 1000px;
+        height: 100px;
+        background: $color-div;
+        border: 3px solid black;
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+        & h3 {
+          font-family: $font-paragraph-light;
+          font-weight: 100;
+          font-size: 30px;
+          letter-spacing: 5px;
+          color: $color-text;
+          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.43);
+
+          & span {
+            color: black;
+          }
+        }
+      }
+      & .img-miss {
+        grid-area: img1;
+        display: flex;
+
+        transition: 0.5s ease-in-out;
+
+        & img {
+          height: 300px;
+          width: auto;
+          border: 3px solid goldenrod;
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.15) translateX(-10%);
+        }
+      }
+
+      & .utilities-container {
+        grid-area: uses;
+        display: flex;
+        text-align: left;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 50px;
+        margin: 20px 0 0 90px;
+        width: 1000px;
+        height: 260px;
+        border: 3px solid black;
+        line-height: 35px;
+        background: $color-div;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+        & ul {
+          display: flex;
+          flex-direction: column;
+
+          & li {
+            font-family: $font-paragraph-reg;
+            font-size: 16px;
+            letter-spacing: 5px;
+            list-style-type: circle;
+          }
+        }
+      }
+
+      & .logoMiss {
+        grid-area: logo;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & img {
+          width: 200px;
+          height: auto;
+          border: 2px solid goldenrod;
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+      }
+      & .techno-container {
+        grid-area: techno;
+        width: 880px;
+        height: 115px;
+        background: $color-div;
+        border: 3px solid black;
+        margin: 100px auto;
+        padding-right: 50px;
+        line-height: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+        & h5 {
+          font-family: $font-paragraph-reg;
+          letter-spacing: 5px;
+          font-size: 19px;
+          font-weight: 1000;
+          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.43);
+        }
+        & p {
+          font-family: $font-paragraph-light;
+          letter-spacing: 5px;
+          font-size: 15px;
+          font-weight: 100;
+        }
+      }
+    }
+  }
+}
