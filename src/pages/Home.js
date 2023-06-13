@@ -73,7 +73,7 @@ const Home = () => {
             </div>
             <div id="text5">
               <p>
-                Les technologies sur lesquelles j’ai travaillé sont :
+                Les technologies sur lesquelles j’ai travaillé sont: <br /> 
                 <strong>
                   Ruby et Rails, Html, CSS, SASS, Javascript, ReactJS.
                 </strong>{" "}
@@ -81,8 +81,8 @@ const Home = () => {
             </div>
             <div id="text6">
               <p>
-                Mais je veux vraiment me spécialiser sur :
-                <strong>JAVASCRIPT/REACT/NodeJS/HTML/SASS</strong>
+                Mais je veux vraiment me spécialiser sur: 
+                <strong> JAVASCRIPT/REACT/NodeJS/HTML/SASS</strong>
               </p>
             </div>
           </div>

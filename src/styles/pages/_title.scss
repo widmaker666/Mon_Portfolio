@@ -301,7 +301,7 @@ header {
     }
     & .arrow-down {
       position: absolute;
-      bottom: 8%;
+      bottom: 4%;
       right: 50%;
     }
   }
@@ -320,61 +320,64 @@ header {
       transition: all 0.5s;
       animation: move-title 10s infinite linear;
     }
+    & .all-container {
+      margin: 25% auto;
 
-    & .links-container {
-      & .links {
-        display: flex;
-        justify-content: center;
-        margin: 60px auto;
+      & .links-container {
+        & .links {
+          display: flex;
+          justify-content: center;
+          margin: 60px auto;
 
-        & li {
-          margin: 0 80px;
-          & a {
-            color: #001219;
-            & svg {
-              width: 55px;
-              height: 55px;
+          & li {
+            margin: 0 80px;
+            & a {
+              color: #001219;
+              & svg {
+                width: 55px;
+                height: 55px;
+              }
             }
           }
         }
       }
-    }
 
-    & .name {
-      & .work-container {
-        font-family: $font-paragraph-light;
-        font-size: 24px;
-        letter-spacing: 10px;
-        margin: 6px;
-        text-align: center;
-        width: 93vh;
-        text-decoration: underline;
-        text-underline-offset: 8px;
+      & .name {
+        & .work-container {
+          font-family: $font-paragraph-light;
+          font-size: 24px;
+          letter-spacing: 10px;
+          margin: 6px;
+          text-align: center;
+          width: 93vh;
+          text-decoration: underline;
+          text-underline-offset: 8px;
+        }
       }
-    }
-    & .quote-container {
-      display: flex;
-      justify-content: flex-end;
-      padding: 15px;
-      & .quote {
+      & .quote-container {
         display: flex;
-        text-align: end;
-        align-items: center;
-        width: 950px;
-        height: 100px;
-        background: $color-div;
-        border: 3px solid black;
-        box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 5px 10px 5px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.75);
-      }
-      & .description {
-        padding: 30px;
+        justify-content: flex-end;
+        padding: 15px;
+        & .quote {
+          display: flex;
+          text-align: end;
+          align-items: center;
+          width: 950px;
+          height: 100px;
+          background: $color-div;
+          border: 3px solid black;
+          box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.75);
+          -webkit-box-shadow: 5px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+        & .description {
+          padding: 30px;
+        }
       }
     }
     & .arrow-down {
       position: absolute;
-      bottom: 10%;
+      bottom: 22%;
       right: 50%;
     }
     & .arrow-down:hover {
@@ -428,7 +431,6 @@ header {
     }
 
     .all-container {
-
       margin-top: 30%;
       & .links-container {
         & .links {
@@ -541,21 +543,6 @@ header {
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   header {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    transition: 1s;
-    animation: headerOpacity 2s linear forwards;
-
-    @keyframes headerOpacity {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-
     & h1 {
       font-family: $font-title;
       font-weight: 100;
@@ -567,7 +554,7 @@ header {
       animation: move-title 10s infinite linear;
     }
     .all-container {
-      margin-top: 100px;
+      margin-top: 80px;
 
       & .links-container {
         & .links {
@@ -667,7 +654,7 @@ header {
     & .arrow-down {
       position: absolute;
       bottom: 3%;
-      right: 45%;
+      right: 47%;
 
       & svg {
         width: 30px;
