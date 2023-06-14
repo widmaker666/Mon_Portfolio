@@ -1,5 +1,4 @@
 .home {
-  min-height: 80vh;
   height: 100vh;
   overflow: hidden;
   position: relative;
@@ -340,8 +339,7 @@ section#formation {
 
 //- Petit ecran et pc 769px — 1024px //
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .home {  
-    
+  .home {
     & .home-container {
       margin-top: 30px;
 
@@ -445,18 +443,19 @@ section#formation {
 
 //- tablette 481px — 768px //
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .home {
+    height: auto;
     & .home-container {
-      margin-top: 100px;
+      margin: 50px auto 200px auto;
 
       & .text-container-header {
         width: 600px;
         height: 305px;
         background: $color-div;
         border: 2px solid black;
-        padding: 20px;
-        margin: 0 20px;
+        padding: 10px;
+        margin: 0 35px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -499,18 +498,14 @@ section#formation {
     }
     & .arrow-down-home {
       position: absolute;
-      bottom: 150px;
+      bottom: 50px;
       right: 50%;
-
-      & svg {
-        width: 30px;
-        height: 30px;
-      }
+      transform: translateX(50%);
     }
     & .arrow-down-home:hover {
       cursor: none;
       animation: none;
-      transform: translateY(-10%);
+      transform: translateX(50%);
       transition: 0.8s ease;
     }
   }
@@ -520,24 +515,25 @@ section#formation {
 
     & .arrow-up-home {
       position: absolute;
-      bottom: 50px;
+      bottom: 0px;
       right: 50%;
+      transform: translateX(50%);
     }
     & .arrow-up-home:hover {
       cursor: none;
       animation: none;
-      transform: translateY(-10%);
-      transition: 0.8s ease;
+      transform: translateX(50%);
+      transition: none;
     }
     @keyframes arrow-up-home {
       0% {
-        transform: translateY(-10%);
+        transform: translateY(0%);
       }
       50% {
-        transform: translateY(10%);
+        transform: translateY(0%);
       }
       100% {
-        transform: translateY(-10%);
+        transform: translateY(0%);
       }
     }
   }
@@ -546,7 +542,7 @@ section#formation {
 //- Telephone 320px —480px //
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .home {
-    height: 130vh;
+    height: auto;
 
     & .home-container {
       margin-top: 10px;
@@ -555,10 +551,11 @@ section#formation {
       & .text-container-header {
         width: 100%;
         height: 280px;
+
         background: $color-div;
         border: 2px solid black;
         padding: 20px;
-        margin: 0 10px;
+        margin: 50px 10px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -621,8 +618,9 @@ section#formation {
 
     & .arrow-up-home {
       position: absolute;
-      bottom: 50px;
+      bottom: 10px;
       right: 50%;
+      transform: translateX(50%);
     }
     & .arrow-up-home:hover {
       cursor: none;

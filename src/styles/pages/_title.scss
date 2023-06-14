@@ -229,7 +229,7 @@ header {
       letter-spacing: 10px;
       margin: 6px;
       text-align: right;
-      width: 93vh;
+      width: 100%;
       text-decoration: underline;
       text-underline-offset: 8px;
     }
@@ -349,9 +349,12 @@ header {
           letter-spacing: 10px;
           margin: 6px;
           text-align: center;
-          width: 93vh;
+          width: 100%;
           text-decoration: underline;
           text-underline-offset: 8px;
+          & h5 {
+            width: 100%;
+          }
         }
       }
       & .quote-container {
@@ -406,7 +409,7 @@ header {
   header {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: auto;
     transition: 1s;
     animation: headerOpacity 2s linear forwards;
 
@@ -431,12 +434,12 @@ header {
     }
 
     .all-container {
-      margin-top: 30%;
+      margin-top: 50px;
       & .links-container {
         & .links {
           display: flex;
           justify-content: center;
-          margin: 55px auto;
+          margin: 35px auto;
 
           & li {
             margin: 0 40px;
@@ -491,7 +494,7 @@ header {
           font-weight: 100;
           letter-spacing: 8px;
           text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.39);
-          padding: 25px;
+          padding: 20px;
           text-decoration: underline;
           text-underline-offset: 8px;
         }
@@ -501,7 +504,7 @@ header {
           letter-spacing: 10px;
           margin: 6px;
           text-align: center;
-          width: 93vh;
+          width: 100%;
           text-decoration: underline;
           text-underline-offset: 8px;
         }
@@ -510,6 +513,7 @@ header {
         display: flex;
         padding: 0;
         padding: 0 20px;
+        margin: 10px auto 150px auto;
 
         & .quote {
           text-align: end;
@@ -529,8 +533,9 @@ header {
     }
     & .arrow-down {
       position: absolute;
-      bottom: 10%;
-      right: 45%;
+      bottom: -13%;
+      right: 50%;
+      transform: translateX(50%);
     }
     & .arrow-down:hover {
       cursor: none;
@@ -543,6 +548,7 @@ header {
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   header {
+    height: auto;
     & h1 {
       font-family: $font-title;
       font-weight: 100;
@@ -554,7 +560,7 @@ header {
       animation: move-title 10s infinite linear;
     }
     .all-container {
-      margin-top: 80px;
+      margin-top: 50px;
 
       & .links-container {
         & .links {
@@ -626,7 +632,7 @@ header {
           letter-spacing: 5px;
           margin: 6px;
           text-align: center;
-          width: 93vh;
+          width: 100%;
           text-decoration: underline;
           text-underline-offset: 8px;
         }
@@ -634,6 +640,7 @@ header {
       & .quote-container {
         padding: 0;
         padding: 0 20px;
+        margin: 10px auto 50px auto;
 
         & .quote {
           text-align: end;
@@ -653,8 +660,9 @@ header {
     }
     & .arrow-down {
       position: absolute;
-      bottom: 3%;
-      right: 47%;
+      bottom: -12%;
+      right: 50%;
+      transform: translateX(50%);
 
       & svg {
         width: 30px;
