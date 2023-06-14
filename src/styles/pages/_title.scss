@@ -227,9 +227,7 @@ header {
       font-family: $font-paragraph-light;
       font-size: 24px;
       letter-spacing: 10px;
-      margin: 6px;
-      text-align: right;
-      width: 100%;
+      margin: 0 auto;
       text-decoration: underline;
       text-underline-offset: 8px;
     }
@@ -310,6 +308,7 @@ header {
 //- Petit ecran et pc 769px — 1024px //
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   header {
+    height: auto;
     & h1 {
       font-family: $font-title;
       font-weight: 100;
@@ -321,7 +320,7 @@ header {
       animation: move-title 10s infinite linear;
     }
     & .all-container {
-      margin: 15% auto;
+      margin: 30px auto 150px auto;
 
       & .links-container {
         & .links {
@@ -380,7 +379,7 @@ header {
     }
     & .arrow-down {
       position: absolute;
-      bottom: 2%;
+      bottom: -20%;
       right: 50%;
     }
     & .arrow-down:hover {
