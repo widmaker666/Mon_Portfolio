@@ -209,7 +209,7 @@ const About = () => {
               <h1>Cinema et art d’horreur / s.f</h1>
               <div className="description ">
                 <p>
-                  Intérêt pour tout type de mediums artistiques avec des artistes comme : King,
+                  Intérêt pour tout type d'art avec des artistes comme : King,
                   Carpenter, Ridley Scott, Kubrick, Dali, Giger, Beksinski,
                   chris Mars etc ....
                 </p>
