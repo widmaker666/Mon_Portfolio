@@ -88,7 +88,7 @@ const Formation = () => {
         <div className="oldSkool">
           <div className="title-mid">
             <h3 className="color-title">
-              Projet Validant de la formationTHP : <span>DEC 2023</span>
+              Projet Validant de la formationTHP : <span>DEC 2022</span>
             </h3>
           </div>
           <div className="gameboy">

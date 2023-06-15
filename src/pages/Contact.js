@@ -22,8 +22,7 @@ const Contact = () => {
       },
       (error) => {
         console.log(error.text);
-        form.current.reset();
-        alert("Remplisser tous les champs");
+        alert("Les champs ne sont pas valides");
       }
     );
   };
@@ -57,6 +56,7 @@ const Contact = () => {
                 type="text"
                 name="name"
                 id="inputName"
+                required
                 placeholder="Nom..."
               />
             </div>
@@ -66,6 +66,7 @@ const Contact = () => {
                 type="text"
                 name="email"
                 id="inputEmail"
+                required
                 placeholder="Email..."
               />
             </div>
@@ -74,6 +75,7 @@ const Contact = () => {
               <textarea
                 name="description"
                 id="inputDescription"
+                required
                 placeholder="Votre message..."
               ></textarea>
             </div>
