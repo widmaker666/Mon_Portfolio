@@ -1,18 +1,19 @@
 .footer {
   width: 100%;
-  height: 200px;
+  height: 170px;
   background: #f6f1e9;
-  border: 1px solid #19297c;
+  border: 1px solid #000000;
+  border-left: none;
+  border-right: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   position: relative;
-  margin-top: 50px;
+  margin-top: 0px;
 
   & a {
-    margin-bottom: 50px;
     position: absolute;
     top: 30px;
   }
@@ -23,5 +24,144 @@
     font-size: 15px;
     font-family: $font-paragraph-light;
     transform: translateX(-50%);
+  }
+}
+
+//- 1439px - 1201px Ecran Pc //
+@media screen and (min-width: 1201px) and (max-width: 1439px) {
+  .footer {
+    width: 100%;
+    height: 170px;
+    background: #f6f1e9;
+    border: 1px solid #000000;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-top: 0px;
+
+    & a {
+      margin-bottom: 50px;
+      position: absolute;
+      top: 30px;
+    }
+
+    & p {
+      position: absolute;
+      bottom: 20px;
+      font-size: 15px;
+      font-family: $font-paragraph-light;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+//- Petit ecran et pc 769px — 1024px //
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    width: 100%;
+    height: 170px;
+    background: #f6f1e9;
+    border: 1px solid #000000;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-top: 0px;
+
+    & a {
+      margin-bottom: 50px;
+      position: absolute;
+      top: 30px;
+    }
+
+    & p {
+      position: absolute;
+      bottom: 20px;
+      font-size: 15px;
+      font-family: $font-paragraph-light;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+//- tablette 481px — 768px //
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .footer {
+    width: 100%;
+    height: 130px;
+    background: #f6f1e9;
+    border: 1px solid #000000;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-top: 0px;
+
+    & a {
+      margin-bottom: 50px;
+      position: absolute;
+      top: 10px;
+    }
+
+    & p {
+      position: absolute;
+      width: 100%;
+      bottom: 20px;
+      font-size: 13px;
+      font-family: $font-paragraph-light;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+//- Telephone 320px —480px //
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .footer {
+    width: 100%;
+    height: 100px;
+    background: #f6f1e9;
+    border: 1px solid #000000;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-top: 0px;
+
+    & a {
+      margin-bottom: 0px;
+      position: absolute;
+      top: 10px;
+      & svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    & p {
+      position: absolute;
+      padding: 5px;
+      width: 100%;
+      bottom: 10px;
+      font-size: 10px;
+      font-family: $font-paragraph-light;
+      transform: translateX(-50%);
+    }
   }
 }

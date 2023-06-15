@@ -9,6 +9,7 @@ import {
 } from "@tabler/icons-react";
 import Formation from "./Formation";
 import { TypeAnimation } from "react-type-animation";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const handleClickImg = () => {
@@ -100,6 +101,7 @@ const Home = () => {
             <IconCircleChevronUp size={51} color="black" stroke={1} />
           </a>
         </div>
+      <Footer/>
       </section>
     </>
   );
