@@ -32,10 +32,10 @@ const Formation = () => {
             </h3>
           </div>
           <div className="paint-1 active-left">
-            <img src={paint1} alt="" />
+            <img src={paint1} alt="peinture picasso fenêtre ouvert à Collioure de Matisse" />
           </div>
           <div className="paint-2 active-right">
-            <img src={paint2} alt="" />
+            <img src={paint2} alt="peinture de Dali - rêve causé par le vole d'une abeille autour d'une grenade, une seconde ant l'éveil -" />
           </div>
           <div className="prez-container">
             <p>
@@ -75,7 +75,7 @@ const Formation = () => {
             </ul>
           </div>
           <div className="logo-msc">
-            <img src={LogoMsc} alt="" />
+            <img src={LogoMsc} alt="Logo de site museum sheet cheat" />
           </div>
           <div className="techno-container">
             <h5>Technologies utilisées : </h5>
@@ -92,7 +92,7 @@ const Formation = () => {
             </h3>
           </div>
           <div className="gameboy">
-            <img src={gameboy} alt="" />
+            <img src={gameboy} alt="petite game boy en mouvement avec un sourire et des yeux" />
           </div>
           <div className="prez-container">
             <p>
@@ -130,7 +130,7 @@ const Formation = () => {
             </ul>
           </div>
           <div className="ruy">
-            <img src={ruy} alt="" />
+            <img src={ruy} alt="ruy le personne de street fighter faisant un hadoken en gif" />
           </div>
           <div className="techno-container">
             <h5>Technologies utilisées : </h5>
@@ -161,7 +161,7 @@ const Formation = () => {
             </h3>
           </div>
           <div className="img-miss">
-            <img src={missCamille} alt="" />
+            <img src={missCamille} alt="photo de la créatrice de bijoux Miss camille bijoux" />
           </div>
           <div className="prez-container">
             <p>Conception du site vitrine pour Miss Camille de bijoux</p>
@@ -199,7 +199,7 @@ const Formation = () => {
             </ul>
           </div>
           <div className="logoMiss">
-            <img src={logoCamille} alt="" />
+            <img src={logoCamille} alt="Logo animé du site de la créatrice miss camille bijoux" />
           </div>
           <div className="techno-container">
             <h5>Technologies utilisées : </h5>

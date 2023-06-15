@@ -33,7 +33,7 @@ const Home = () => {
           <div className="image-header">
             <img
               src={PhotoHeader}
-              alt=""
+              alt="Alexandre hontcharouk web developpeur"
               onClick={handleClickImg}
               id="imgContainer"
             />

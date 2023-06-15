@@ -22,12 +22,12 @@ const Erreur_404 = () => {
           404
         </div>
         <div className="img-container">
-          <img id="pain" src={grillePain} alt="" />
-          <img id="ver" src={ver} alt="" />
-          <img id="cloche" src={cloche} alt="" />
-          <img id="bouche" src={bouche} alt="" />
-          <img id="reveil" src={reveil} alt="" />
-          <img id="jesus" src={jesus} alt="" />
+          <img id="pain" src={grillePain} alt="grille pain avec des ailes animé" />
+          <img id="ver" src={ver} alt="ver de terre animé" />
+          <img id="cloche" src={cloche} alt="cloche animé" />
+          <img id="bouche" src={bouche} alt="bouche rose animé" />
+          <img id="reveil" src={reveil} alt="reveil animé" />
+          <img id="jesus" src={jesus} alt="c'est le jesus qui dance en rond commme dans les simpsons" />
         </div>
         <button className="erreur404">
           <a href="/">Tu ferais mieux de retourner au début</a>

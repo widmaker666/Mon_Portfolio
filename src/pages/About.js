@@ -20,9 +20,6 @@ import BannerProf from "../components/BannerProf";
 import Footer from "../components/Footer";
 
 const About = () => {
- 
-  
-
   return (
     <>
       <section className="container-about" id="formation">
@@ -33,7 +30,10 @@ const About = () => {
           </div>
           <div className="photographe">
             <div className="img-photo">
-              <img src={photo} alt="" />
+              <img
+                src={photo}
+                alt="alexandre hontcharouk developpeur web dans son metier de photographe professionnel"
+              />
             </div>
             <div className="text-photo">
               <div className="title-photo">
@@ -65,19 +65,25 @@ const About = () => {
                 size={70}
                 stroke={1}
               />
-              <a target="_blank" href="">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/alexandrejackcliche/"
+              >
                 Instagram
               </a>
             </div>
             <div className="facebook">
               <IconBrandFacebook color="rgb(0, 76, 190)" size={70} stroke={1} />
-              <a target="_blank" href="">
+              <a target="_blank" href="https://www.facebook.com/Alexphoto69">
                 Facebook
               </a>
             </div>
             <div className="eyeem">
               <IconCamera color="#1B9C85" size={70} stroke={1} />
-              <a target="_blank" href="">
+              <a
+                target="_blank"
+                href="https://www.eyeem.com/u/AlexandreHontcharouk/photos"
+              >
                 Portfolio Photo
               </a>
             </div>
@@ -88,7 +94,11 @@ const About = () => {
           <div className="title-music">
             <h1>MUSICIEN AUTEUR / COMPOSITEUR (2011 - NOW)</h1>
           </div>
-          <img className="" src={imgPhoto} alt="" />
+          <img
+            className=""
+            src={imgPhoto}
+            alt="Alexandre hontcharouk web developpeur en concert sur scène avec une guitare schecter blanche avec son guitariste"
+          />
           <div className="description-music ">
             <ul id="ul1">
               <li>
@@ -127,19 +137,25 @@ const About = () => {
                 size={70}
                 stroke={1}
               />
-              <a target="_blank" href="">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/flyingsharksofficial/?hl=fr"
+              >
                 Instagram
               </a>
             </div>
             <div className="facebook">
               <IconBrandFacebook color="rgb(0, 76, 190)" size={70} stroke={1} />
-              <a target="_blank" href="">
+              <a target="_blank" href="https://www.facebook.com/FlyingSharks69">
                 Facebook
               </a>
             </div>
             <div className="youtube">
               <IconBrandYoutube color="#c4302b" size={70} stroke={1} />
-              <a target="_blank" href="">
+              <a
+                target="_blank"
+                href="https://www.youtube.com/channel/UCzrEp4ZZglmQx3cfdC69hJQ"
+              >
                 Youtube
               </a>
             </div>
@@ -160,7 +176,11 @@ const About = () => {
                 les aider à apprendre.
               </p>
             </div>
-            <img className="" src={photoGuitar} alt="" />
+            <img
+              className=""
+              src={photoGuitar}
+              alt="Alexandre hontcharouk web developper en concert avec guitare lag"
+            />
           </div>
         </div>
         <BannerProf />
@@ -169,10 +189,10 @@ const About = () => {
           <div className="description-vert ">
             <p>
               A travaillé pour l’AESE feyzin et la mairie de feyzin au cours de
-              plusieurs contrat en CDD Ouvrier paysagiste et voirie.
-              J'adore le contact avec la nature et même si le travail est
-              physique, il faut aussi <strong>réfléchir</strong> à comment faire
-              pour <strong>optimiser son temps</strong> et avoir une certaine
+              plusieurs contrat en CDD Ouvrier paysagiste et voirie. J'adore le
+              contact avec la nature et même si le travail est physique, il faut
+              aussi <strong>réfléchir</strong> à comment faire pour{" "}
+              <strong>optimiser son temps</strong> et avoir une certaine
               <strong>logique</strong>pour utiliser les bons outils et les
               bonnes techniques.
             </p>
@@ -189,10 +209,18 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <img className="" src={cthulhu} alt="" />
+            <img
+              className=""
+              src={cthulhu}
+              alt="Le célèbre cthulhu dans la mer en train de détruire des bateaux"
+            />
           </div>
           <div className="amnesia">
-            <img className="" src={amnesia} alt="" />
+            <img
+              className=""
+              src={amnesia}
+              alt="Pochette du jeu pc amnesia the dark descent"
+            />
             <div className="text2">
               <h1>Jeux videos / Amnesia the dark descent</h1>
               <div className="description ">
@@ -215,7 +243,11 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <img className="" src={king} alt="" />
+            <img
+              className=""
+              src={king}
+              alt="Le célèbre écrivain stephen king en version 3d"
+            />
           </div>
         </div>
       </section>

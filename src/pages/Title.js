@@ -17,19 +17,19 @@ const Title = () => {
               <li>
                 <a
                   className="text"
-                  href="https://youtu.be/ahdH8eTydWY"
+                  href="https://www.instagram.com/alexandrejackcliche/"
                   target="_blank"
                 >
                   <IconBrandInstagram id="social1" size={71} stroke={2} />
                 </a>
               </li>
               <li>
-                <a href="https://youtu.be/ahdH8eTydWY" target="_blank">
+                <a href="https://github.com/widmaker666" target="_blank">
                   <IconBrandGithub id="social2" size={71} stroke={2} />
                 </a>
               </li>
               <li>
-                <a href="https://youtu.be/ahdH8eTydWY" target="_blank">
+                <a href="https://www.linkedin.com/in/alexandre-hontcharouk-879b71b9/" target="_blank">
                   <IconBrandLinkedin id="social3" size={71} stroke={2} />
                 </a>
               </li>
