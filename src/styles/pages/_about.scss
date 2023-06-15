@@ -647,6 +647,7 @@ section.container-about {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
+      margin-bottom: 50px;
 
       & h1 {
         font-family: $font-paragraph-reg;

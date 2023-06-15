@@ -1,14 +1,12 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Title from "./Title";
-import LightBtn from "../components/LightBtn";
 import PhotoHeader from "../assets/images/header.webp";
 import {
   IconCircleChevronDown,
   IconCircleChevronUp,
 } from "@tabler/icons-react";
 import Formation from "./Formation";
-import { TypeAnimation } from "react-type-animation";
 import Footer from "../components/Footer";
 
 const Home = () => {
