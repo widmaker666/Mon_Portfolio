@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Bienvenue sur le repository de mon Portfolio / CV interactif👋
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🛠️ Technos utilisées
+- [React](https://reactjs.org/)
+- [Javascript](https://www.javascript.com)
+- [HTML](https://html.com)
+- [SASS](https://sass-lang.com)
+    
+# <p align="center">Présentation du projet</p>
+  
+  
+![Image](https://zupimages.net/up/23/24/tfua.png)
 
-## Available Scripts
+Je me présente, je suis Alexandre Hontcharouk développeur web junior basé à Lyon, Villeurbanne, passionné par la création d'expériences interactives et réactives. Mon expertise se concentre sur les technologies web modernes telles que JavaScript, React, Sass et HTML. Je suis constamment à l'affût des dernières tendances et je m'efforce de rester à la pointe de l'industrie.
 
-In the project directory, you can run:
+  Mon approche collaborative et ma capacité à travailler en équipe font de moi un élément précieux dans tout projet. J'aime participer à des environnements de développement agiles où nous pouvons collaborer et échanger des idées pour trouver des solutions innovantes. Je suis motivé par la résolution de problèmes et j'ai une passion pour l'optimisation des performances et l'accessibilité.
 
-### `npm start`
+  Chaque jour, je me consacre à me perfectionner dans les technologies clés de mon domaine. Actuellement, je me spécialise en React, TypeScript et Node.js, car je crois en leur potentiel pour créer des applications web évolutives et robustes. Je suis également à l'aise avec les principes de développement frontend tels que le responsive design, l'architecture des composants et l'optimisation SEO.
+  
+  Mon portfolio ou CV interactif vous permettra de découvrir mes compétences, mes projets précédents et mes réalisations. N'hésitez pas à me contacter si vous souhaitez en savoir plus sur mon parcours professionnel ou discuter de collaborations. Je suis ouvert aux opportunités et aux projets intéressants.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🙇 Autheur
+#### Alexandre HONTCHAROUK
+- linkedin: [@alexandre-hontcharouk](https://www.linkedin.com/in/alexandre-hontcharouk-879b71b9/)
