@@ -49,7 +49,7 @@ const Home = () => {
             </div>
             <div id="text2">
               <p>
-                Formé par The Hacking Project avec plus de 1200h et le RNCP5
+                Formé par The Hacking Project avec plus de 1200h et le RNCP5/BAC+2
                 (Dev Web), plus un stage de 2 mois en entreprise pour Miss
                 Camille, créatrice de bijoux.
               </p>
@@ -61,7 +61,7 @@ const Home = () => {
                 choses à vous montrer mais ces choses existent pourtant et je
                 compte bien continuer à abreuver ma soif de connaissance dans ce
                 milieu qui me plaît de plus en plus à mesure que j’avance et que
-                je code.
+                je code tous les jours sans relache.
               </p>
             </div>
             <div id="text4">
@@ -83,7 +83,7 @@ const Home = () => {
             <div id="text6">
               <p>
                 Mais je veux vraiment me spécialiser sur: 
-                <strong> JAVASCRIPT/REACT/NodeJS/HTML/SASS</strong>
+                <strong> JAVASCRIPT/TYPESCRIPT/REACT/NodeJS/HTML/SASS</strong>
               </p>
             </div>
           </div>

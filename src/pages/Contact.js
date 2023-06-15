@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import Navbar from "../components/Navbar";
 import { TypeAnimation } from "react-type-animation";
 import emailjs from "@emailjs/browser";
+import Footer from "../components/Footer";
 
 const Contact = () => {
   const googleId = "service_cbcbrwa";
@@ -82,6 +83,7 @@ const Contact = () => {
           </form>
         </div>
       </section>
+      <Footer/>
     </>
   );
 };

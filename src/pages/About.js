@@ -168,8 +168,8 @@ const About = () => {
           <h1>ouvrier espace verts (2009/2010/2016/2017)</h1>
           <div className="description-vert ">
             <p>
-              A travailler pour l’AESE feyzin et la mairie de feyzin au cours de
-              plusieurs contrat en CDI et CDD Ouvrier paysagiste et voirie.
+              A travaillé pour l’AESE feyzin et la mairie de feyzin au cours de
+              plusieurs contrat en CDD Ouvrier paysagiste et voirie.
               J'adore le contact avec la nature et même si le travail est
               physique, il faut aussi <strong>réfléchir</strong> à comment faire
               pour <strong>optimiser son temps</strong> et avoir une certaine

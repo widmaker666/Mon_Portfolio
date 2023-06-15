@@ -11,8 +11,9 @@
 
   & p {
     margin: 0px auto;
+    padding: 5px;
     width: 612px;
-    height: 191px;
+    height: 150px;
     font-family: $font-paragraph-light;
     text-align: center;
     font-size: 22px;
@@ -150,6 +151,683 @@
           cursor: pointer;
           background: black;
           color: white;
+        }
+      }
+    }
+  }
+}
+
+//- 1439px - 1201px Ecran Pc //
+@media screen and (min-width: 1201px) and (max-width: 1439px) {
+  .contact {
+    height: auto;
+
+    & h1 {
+      text-transform: uppercase;
+      font-family: $font-title;
+      font-size: 60px;
+      text-align: center;
+      padding: 10px;
+    }
+
+    & p {
+      margin: 0px auto;
+      padding: 5px;
+      width: 612px;
+      height: 150px;
+      font-family: $font-paragraph-light;
+      text-align: center;
+      font-size: 22px;
+      line-height: 27px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & .form-container {
+      height: auto;
+      margin: 20px 0 50px 0;
+
+      & .form-flex {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: $font-paragraph-reg;
+
+        & .name {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 10px;
+
+          & label {
+            font-weight: 400;
+            font-size: 23px;
+            text-transform: uppercase;
+          }
+
+          & input {
+            font-family: $font-paragraph-light;
+            width: 530px;
+            height: 51px;
+            background: #f6f1e9;
+            border: 3px solid #000000;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+            padding-left: 10px;
+            margin-top: 10px;
+          }
+          & input:focus {
+            background: black;
+            color: whitesmoke;
+            letter-spacing: 2px;
+            font-size: 16px;
+          }
+          & input:hover {
+            cursor: pointer;
+          }
+        }
+
+        & .email {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 10px;
+
+          & label {
+            font-weight: 400;
+            font-size: 23px;
+            text-transform: uppercase;
+          }
+
+          & input {
+            font-family: $font-paragraph-light;
+            width: 530px;
+            height: 51px;
+            background: #f6f1e9;
+            border: 3px solid #000000;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+            padding-left: 10px;
+            margin-top: 10px;
+          }
+          & input:focus {
+            background: black;
+            color: whitesmoke;
+            letter-spacing: 2px;
+            font-size: 16px;
+          }
+          & input:hover {
+            cursor: pointer;
+          }
+        }
+        & .description {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 10px;
+
+          & label {
+            font-weight: 400;
+            font-size: 23px;
+            text-transform: uppercase;
+          }
+
+          & textarea {
+            resize: none;
+            font-family: $font-paragraph-light;
+            width: 530px;
+            height: 101px;
+            background: #f6f1e9;
+            border: 3px solid #000000;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+            padding: 10px;
+            margin-top: 10px;
+            display: flex;
+          }
+          & textarea:focus {
+            background: black;
+            color: whitesmoke;
+            letter-spacing: 2px;
+            font-size: 16px;
+          }
+          & textarea:hover {
+            cursor: pointer;
+          }
+        }
+        & .btn-submit {
+          width: 36%;
+          height: 50px;
+          text-align: right;
+          margin: 10px;
+
+          & .submit {
+            width: 200px;
+            height: 100%;
+            font-family: $font-paragraph-reg;
+            text-transform: uppercase;
+            font-weight: 4;
+            font-size: 23px;
+            background: #f6f1e9;
+            border: 3px solid #000000;
+            text-align: center;
+          }
+
+          & .submit:hover {
+            cursor: pointer;
+            background: black;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+//- Petit ecran et pc 769px — 1024px //
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .contact {
+    height: auto;
+
+    & h1 {
+      text-transform: uppercase;
+      font-family: $font-title;
+      font-size: 60px;
+      text-align: center;
+      padding: 10px;
+    }
+
+    & p {
+      margin: 0px auto;
+      padding: 5px;
+      width: 612px;
+      height: 150px;
+      font-family: $font-paragraph-light;
+      text-align: center;
+      font-size: 22px;
+      line-height: 27px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & .form-container {
+      height: auto;
+      margin: 20px 0 50px 0;
+
+      & .form-flex {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: $font-paragraph-reg;
+
+        & .name {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 10px;
+
+          & label {
+            font-weight: 400;
+            font-size: 23px;
+            text-transform: uppercase;
+          }
+
+          & input {
+            font-family: $font-paragraph-light;
+            width: 530px;
+            height: 51px;
+            background: #f6f1e9;
+            border: 3px solid #000000;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+            padding-left: 10px;
+            margin-top: 10px;
+          }
+          & input:focus {
+            background: black;
+            color: whitesmoke;
+            letter-spacing: 2px;
+            font-size: 16px;
+          }
+          & input:hover {
+            cursor: pointer;
+          }
+        }
+
+        & .email {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 10px;
+
+          & label {
+            font-weight: 400;
+            font-size: 23px;
+            text-transform: uppercase;
+          }
+
+          & input {
+            font-family: $font-paragraph-light;
+            width: 530px;
+            height: 51px;
+            background: #f6f1e9;
+            border: 3px solid #000000;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+            padding-left: 10px;
+            margin-top: 10px;
+          }
+          & input:focus {
+            background: black;
+            color: whitesmoke;
+            letter-spacing: 2px;
+            font-size: 16px;
+          }
+          & input:hover {
+            cursor: pointer;
+          }
+        }
+        & .description {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 10px;
+
+          & label {
+            font-weight: 400;
+            font-size: 23px;
+            text-transform: uppercase;
+          }
+
+          & textarea {
+            resize: none;
+            font-family: $font-paragraph-light;
+            width: 530px;
+            height: 101px;
+            background: #f6f1e9;
+            border: 3px solid #000000;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+            padding: 10px;
+            margin-top: 10px;
+            display: flex;
+          }
+          & textarea:focus {
+            background: black;
+            color: whitesmoke;
+            letter-spacing: 2px;
+            font-size: 16px;
+          }
+          & textarea:hover {
+            cursor: pointer;
+          }
+        }
+        & .btn-submit {
+          width: 36%;
+          height: 50px;
+          text-align: right;
+          margin: 10px;
+
+          & .submit {
+            width: 200px;
+            height: 100%;
+            font-family: $font-paragraph-reg;
+            text-transform: uppercase;
+            font-weight: 4;
+            font-size: 23px;
+            background: #f6f1e9;
+            border: 3px solid #000000;
+            text-align: center;
+          }
+
+          & .submit:hover {
+            cursor: pointer;
+            background: black;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+//- tablette 481px — 768px //
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .contact {
+    height: auto;
+
+    & h1 {
+      text-transform: uppercase;
+      font-family: $font-title;
+      font-size: 60px;
+      text-align: center;
+      padding: 10px;
+    }
+
+    & p {
+      margin: 0px auto;
+      padding: 10px;
+      width: 560px;
+      height: 150px;
+      font-family: $font-paragraph-light;
+      text-align: center;
+      font-size: 20px;
+      line-height: 27px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & .form-container {
+      height: auto;
+      margin: 20px 0 50px 0;
+
+      & .form-flex {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: $font-paragraph-reg;
+
+        & .name {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 10px;
+
+          & label {
+            font-weight: 400;
+            font-size: 23px;
+            text-transform: uppercase;
+          }
+
+          & input {
+            font-family: $font-paragraph-light;
+            width: 530px;
+            height: 51px;
+            background: #f6f1e9;
+            border: 3px solid #000000;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+            padding-left: 10px;
+            margin-top: 10px;
+          }
+          & input:focus {
+            background: black;
+            color: whitesmoke;
+            letter-spacing: 2px;
+            font-size: 16px;
+          }
+          & input:hover {
+            cursor: pointer;
+          }
+        }
+
+        & .email {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 10px;
+
+          & label {
+            font-weight: 400;
+            font-size: 23px;
+            text-transform: uppercase;
+          }
+
+          & input {
+            font-family: $font-paragraph-light;
+            width: 530px;
+            height: 51px;
+            background: #f6f1e9;
+            border: 3px solid #000000;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+            padding-left: 10px;
+            margin-top: 10px;
+          }
+          & input:focus {
+            background: black;
+            color: whitesmoke;
+            letter-spacing: 2px;
+            font-size: 16px;
+          }
+          & input:hover {
+            cursor: pointer;
+          }
+        }
+        & .description {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 10px;
+
+          & label {
+            font-weight: 400;
+            font-size: 23px;
+            text-transform: uppercase;
+          }
+
+          & textarea {
+            resize: none;
+            font-family: $font-paragraph-light;
+            width: 530px;
+            height: 101px;
+            background: #f6f1e9;
+            border: 3px solid #000000;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+            padding: 10px;
+            margin-top: 10px;
+            display: flex;
+          }
+          & textarea:focus {
+            background: black;
+            color: whitesmoke;
+            letter-spacing: 2px;
+            font-size: 16px;
+          }
+          & textarea:hover {
+            cursor: pointer;
+          }
+        }
+        & .btn-submit {
+          width: 100%;
+          height: 50px;
+          text-align: center;
+          margin: 10px;
+
+          & .submit {
+            width: 200px;
+            height: 100%;
+            font-family: $font-paragraph-reg;
+            text-transform: uppercase;
+            font-weight: 4;
+            font-size: 23px;
+            background: #f6f1e9;
+            border: 3px solid #000000;
+            text-align: center;
+          }
+
+          & .submit:hover {
+            cursor: pointer;
+            background: $color-div;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+//- Telephone 320px —480px //
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .contact {
+    height: auto;
+
+    & h1 {
+      text-transform: uppercase;
+      font-family: $font-title;
+      font-size: 30px;
+      text-align: center;
+      padding: 10px;
+      margin: 5px;
+    }
+
+    & p {
+      margin: 0px auto;
+      padding: 10px;
+      width: 300px;
+      height: 150px;
+      font-family: $font-paragraph-light;
+      text-align: center;
+      font-size: 14px;
+      line-height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & .form-container {
+      height: auto;
+      margin: 20px 0 50px 0;
+
+      & .form-flex {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: $font-paragraph-reg;
+
+        & .name {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 10px;
+
+          & label {
+            font-weight: 400;
+            font-size: 15px;
+            text-transform: uppercase;
+          }
+
+          & input {
+            font-family: $font-paragraph-light;
+            width: 280px;
+            height: 45px;
+            background: #f6f1e9;
+            border: 3px solid #000000;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+            padding-left: 10px;
+            margin-top: 5px;
+          }
+          & input:focus {
+            background: black;
+            color: whitesmoke;
+            letter-spacing: 2px;
+            font-size: 16px;
+          }
+          & input:hover {
+            cursor: pointer;
+          }
+        }
+
+        & .email {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 10px;
+
+          & label {
+            font-weight: 400;
+            font-size: 15px;
+            text-transform: uppercase;
+          }
+
+          & input {
+            font-family: $font-paragraph-light;
+            width: 280px;
+            height: 45px;
+            background: #f6f1e9;
+            border: 3px solid #000000;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+            padding-left: 10px;
+            margin-top: 10px;
+          }
+          & input:focus {
+            background: black;
+            color: whitesmoke;
+            letter-spacing: 2px;
+            font-size: 16px;
+          }
+          & input:hover {
+            cursor: pointer;
+          }
+        }
+        & .description {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 10px;
+
+          & label {
+            font-weight: 400;
+            font-size: 15px;
+            text-transform: uppercase;
+          }
+
+          & textarea {
+            resize: none;
+            font-family: $font-paragraph-light;
+            width: 280px;
+            height: 150px;
+            background: #f6f1e9;
+            border: 3px solid #000000;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+            padding: 10px;
+            margin-top: 10px;
+            display: flex;
+          }
+          & textarea:focus {
+            background: black;
+            color: whitesmoke;
+            letter-spacing: 2px;
+            font-size: 16px;
+          }
+          & textarea:hover {
+            cursor: pointer;
+          }
+        }
+        & .btn-submit {
+          width: 100%;
+          height: 50px;
+          text-align: center;
+          margin: 10px;
+
+          & .submit {
+            width: 200px;
+            height: 100%;
+            font-family: $font-paragraph-reg;
+            text-transform: uppercase;
+            font-weight: 4;
+            font-size: 23px;
+            background: #f6f1e9;
+            border: 3px solid #000000;
+            text-align: center;
+          }
+
+          & .submit:hover {
+            cursor: pointer;
+            background: $color-div;
+            color: black;
+          }
         }
       }
     }

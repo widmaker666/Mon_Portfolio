@@ -68,7 +68,7 @@ const Formation = () => {
               </li>
               <li>
                 Réalisation d'un systeme d'authentification via Firebase + envoi
-                de mailsautomatisés
+                de mails automatisés
               </li>
               <li>Formulaire contact fait avec EMAILJS</li>
               <li>Utilisation de l'API museum chicago</li>
@@ -123,9 +123,9 @@ const Formation = () => {
               <li>
                 Travail en équipe, utilisation de git et github pour travailler
               </li>
-              <li>réalisation d'un systeme d'authentification (devise)</li>
+              <li>Réalisation d'un systeme d'authentification (devise)</li>
               <li>Mise en place d'un backend avec Ruby on rails</li>
-              <li>Gestion des paiement (stripe)</li>
+              <li>Gestion des paiements (stripe)</li>
               <li>Utilisation de Bootstrap</li>
             </ul>
           </div>
@@ -194,7 +194,7 @@ const Formation = () => {
               <li>Maquette UI/UX (figma) réalisée</li>
               <li>Site vitrine créé en Html / Sass</li>
               <li>Animation en Javascript Vanilla</li>
-              <li>Adaptation du site de façon responsive</li>
+              <li>Adaptation en responsive adaptatif</li>
               <li>Formulaire de contact avec EMAILJS</li>
             </ul>
           </div>
