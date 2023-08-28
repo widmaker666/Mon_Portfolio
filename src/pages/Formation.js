@@ -170,7 +170,7 @@ const Formation = () => {
               Projet :{" "}
               <a
                 target="_blank"
-                href="https://miss-camille-bijoux.netlify.app/"
+                href="https://bijouxcamillelyon.com"
               >
                 Miss Camille Vitrine
               </a>
